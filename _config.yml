@@ -32,4 +32,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-excerpt_separator: <!--more-->
+excerpt_separator: <!-- more -->
