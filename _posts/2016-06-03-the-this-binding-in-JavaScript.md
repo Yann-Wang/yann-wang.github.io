@@ -1,8 +1,6 @@
 ---
 title: JavaScript中的this绑定
 date: 2016-06-03 11:44:51
-categories:
-- technology
 tags:
 - this
 - bind

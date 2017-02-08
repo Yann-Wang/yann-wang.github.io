@@ -1,8 +1,6 @@
 ---
 title: 请求拦截及转发
 date: 2016-10-20 20:40:55
-categories:
-- technology
 tags:
 - intercept request
 - forward request

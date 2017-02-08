@@ -1,8 +1,6 @@
 ---
 title: 跨域请求技术
 date: 2016-07-16 21:40:55
-categories:
-- technology
 tags:
 - cross origin
 - CORS

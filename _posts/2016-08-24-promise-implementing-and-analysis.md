@@ -1,8 +1,6 @@
 ---
 title: v8在解析promise源码时的执行环境变化过程
 date: 2016-08-24 21:40:55
-categories:
-- technology
 tags:
 - promise
 - execution environment
@@ -17,7 +15,7 @@ tags:
 
 <!-- more -->
 
-{% jsfiddle 01duqtsu js,html,result %}
+<script async src="//fiddle.jshell.net/spray/01duqtsu/embed/"></script>
 
 - 在执行代码是为了避免使用Node中已经实现的Promise，所以将Promise改名为Promise2，　并且把测试环境设为了浏览器中．在上面的代码中，把Promise的实现部分放在了javascript文件中，并在html文件的head中引入； 对promise的使用放在了html文件的script标签中．
 

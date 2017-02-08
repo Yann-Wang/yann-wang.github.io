@@ -1,8 +1,6 @@
 ---
 title: 为什么加入overflow:hidden即可清除浮动呢？
 date: 2016-10-10 20:40:55
-categories:
-- technology
 tags:
 - CSS
 - BFC

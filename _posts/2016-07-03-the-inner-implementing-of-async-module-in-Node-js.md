@@ -1,8 +1,6 @@
 ---
 title: Node.js中的async模块的内部实现
 date: 2016-07-03 11:44:51
-categories:
-- technology
 tags:
 - async
 - inner implementing

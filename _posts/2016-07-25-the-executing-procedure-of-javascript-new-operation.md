@@ -1,8 +1,6 @@
 ---
 title: JavaScript　new 操作符的执行过程
 date: 2016-07-25 10:39:06
-categories:
-- technology
 tags:
 - new
 - operation
@@ -33,9 +31,9 @@ tags:
     
     hh.ss   // undefined
     hh.aa   // 6    
-    {% endcodeblock %}
+    {% endhighlight %}
 
-    {% codeblock 没返回值时 lang:javascript %}
+    {% highlight javascript %}
     function dd2(){ this.ss2 = 4; }
     var hh2 = new dd2();
     

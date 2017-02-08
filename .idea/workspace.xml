@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f2fb939-0cfa-4178-b924-3c26a1cc2b87" name="Default" comment="" />
+    <list default="true" id="5f2fb939-0cfa-4178-b924-3c26a1cc2b87" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-02-07-welcome-to-jekyll.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-06-03-the-this-binding-in-JavaScript.md" afterPath="$PROJECT_DIR$/_posts/2016-06-03-the-this-binding-in-JavaScript.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-03-the-inner-implementing-of-async-module-in-Node-js.md" afterPath="$PROJECT_DIR$/_posts/2016-07-03-the-inner-implementing-of-async-module-in-Node-js.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-16-cross-origin-request-technology.md" afterPath="$PROJECT_DIR$/_posts/2016-07-16-cross-origin-request-technology.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-25-the-executing-procedure-of-javascript-new-operation.md" afterPath="$PROJECT_DIR$/_posts/2016-07-25-the-executing-procedure-of-javascript-new-operation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-03-what-happened-when-v8-parse-function-declaration-and-function-called.md" afterPath="$PROJECT_DIR$/_posts/2016-08-03-what-happened-when-v8-parse-function-declaration-and-function-called.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-24-promise-implementing-and-analysis.md" afterPath="$PROJECT_DIR$/_posts/2016-08-24-promise-implementing-and-analysis.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-09-16-the-feature-of-functional-language.md" afterPath="$PROJECT_DIR$/_posts/2016-09-16-the-feature-of-functional-language.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-09-20-Is-JavaScript-one-of-functional-language.md" afterPath="$PROJECT_DIR$/_posts/2016-09-20-Is-JavaScript-one-of-functional-language.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-10-01-lexical-scope-&amp;-functional-language.md" afterPath="$PROJECT_DIR$/_posts/2016-10-01-lexical-scope-&amp;-functional-language.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-10-10-why-we-can-clear-float-when-use-overflow_hidden.md" afterPath="$PROJECT_DIR$/_posts/2016-10-10-why-we-can-clear-float-when-use-overflow_hidden.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-10-20-Intercepting-&amp;-Forwarding-HTTP-Requests-&amp;-Responses.md" afterPath="$PROJECT_DIR$/_posts/2016-10-20-Intercepting-&amp;-Forwarding-HTTP-Requests-&amp;-Responses.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-10-25-dom_class_diagram.md" afterPath="$PROJECT_DIR$/_posts/2016-10-25-dom_class_diagram.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-11-03-touch-event-summary-in-mobile-web.md" afterPath="$PROJECT_DIR$/_posts/2016-11-03-touch-event-summary-in-mobile-web.md" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -27,8 +43,17 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2016-06-03-the-this-binding-in-JavaScript.md" />
         <option value="$PROJECT_DIR$/_posts/2016-07-03-the-inner-implementing-of-async-module-in-Node-js.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-07-16-cross-origin-request-technology.md" />
         <option value="$PROJECT_DIR$/_posts/2016-07-25-the-executing-procedure-of-javascript-new-operation.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-08-03-what-happened-when-v8-parse-function-declaration-and-function-called.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-08-24-promise-implementing-and-analysis.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-09-16-the-feature-of-functional-language.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-09-20-Is-JavaScript-one-of-functional-language.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-10-01-lexical-scope-&amp;-functional-language.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-10-10-why-we-can-clear-float-when-use-overflow_hidden.md" />
         <option value="$PROJECT_DIR$/_posts/2016-10-20-Intercepting-&amp;-Forwarding-HTTP-Requests-&amp;-Responses.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-10-25-dom_class_diagram.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-11-03-touch-event-summary-in-mobile-web.md" />
       </list>
     </option>
   </component>
@@ -167,12 +192,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486539861785</updated>
-      <workItem from="1486539863373" duration="3030000" />
+      <workItem from="1486539863373" duration="5070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3030000" />
+    <option name="totallyTimeSpent" value="5070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -207,27 +232,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-07-welcome-to-jekyll.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="253">
-            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="222">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -235,135 +243,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-07-03-the-inner-implementing-of-async-module-in-Node-js.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="457">
-            <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-07-16-cross-origin-request-technology.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-95">
-            <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-07-25-the-executing-procedure-of-javascript-new-operation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-256">
-            <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="30" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-03-what-happened-when-v8-parse-function-declaration-and-function-called.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-4189">
-            <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-24-promise-implementing-and-analysis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="207">
-            <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-09-16-the-feature-of-functional-language.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-693">
-            <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-09-20-Is-JavaScript-one-of-functional-language.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-210">
-            <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-10-01-lexical-scope-&amp;-functional-language.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-348">
-            <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-10-10-why-we-can-clear-float-when-use-overflow_hidden.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-463">
-            <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-10-20-Intercepting-&amp;-Forwarding-HTTP-Requests-&amp;-Responses.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1403">
-            <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-            <folding>
-              <marker date="1486542738903" expanded="true" signature="895:966" ph="{...}" />
-              <marker date="1486542738903" expanded="true" signature="919:962" ph="{&quot;Content-Type&quot;: 'text/plain'...}" />
-              <marker date="1486542738903" expanded="true" signature="1016:1495" ph="{...}" />
-              <marker date="1486542738903" expanded="true" signature="1089:1493" ph="{...}" />
-              <marker date="1486542738903" expanded="true" signature="1379:1439" ph="{&quot;Content-Type&quot;: 'text/plain'...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-10-25-dom_class_diagram.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-141">
-            <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-11-03-touch-event-summary-in-mobile-web.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-394">
-            <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <first_editor relative-caret-position="230">
+            <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
             <folding />
           </first_editor>
           <second_editor />
@@ -373,14 +254,158 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-06-03-the-this-binding-in-JavaScript.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="365">
-            <caret line="130" column="26" lean-forward="true" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             <folding>
-              <marker date="1486542738951" expanded="true" signature="2008:2111" ph="{...}" />
-              <marker date="1486542738951" expanded="true" signature="2189:2223" ph="{...}" />
-              <marker date="1486542738951" expanded="true" signature="2302:2325" ph="{...}" />
-              <marker date="1486542738951" expanded="true" signature="2716:2745" ph="{...}" />
+              <marker date="1486545894471" expanded="true" signature="1983:2086" ph="{...}" />
+              <marker date="1486545894471" expanded="true" signature="2164:2198" ph="{...}" />
+              <marker date="1486545894471" expanded="true" signature="2277:2300" ph="{...}" />
+              <marker date="1486545894471" expanded="true" signature="2691:2720" ph="{...}" />
             </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-07-16-cross-origin-request-technology.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-07-25-the-executing-procedure-of-javascript-new-operation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-03-what-happened-when-v8-parse-function-declaration-and-function-called.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-24-promise-implementing-and-analysis.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-09-16-the-feature-of-functional-language.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-09-20-Is-JavaScript-one-of-functional-language.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-10-01-lexical-scope-&amp;-functional-language.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-10-10-why-we-can-clear-float-when-use-overflow_hidden.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-10-20-Intercepting-&amp;-Forwarding-HTTP-Requests-&amp;-Responses.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding>
+              <marker date="1486545894451" expanded="true" signature="870:941" ph="{...}" />
+              <marker date="1486545894451" expanded="true" signature="894:937" ph="{&quot;Content-Type&quot;: 'text/plain'...}" />
+              <marker date="1486545894451" expanded="true" signature="991:1470" ph="{...}" />
+              <marker date="1486545894451" expanded="true" signature="1064:1468" ph="{...}" />
+              <marker date="1486545894451" expanded="true" signature="1354:1414" ph="{&quot;Content-Type&quot;: 'text/plain'...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-10-25-dom_class_diagram.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-11-03-touch-event-summary-in-mobile-web.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-07-welcome-to-jekyll.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="322">
+            <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
