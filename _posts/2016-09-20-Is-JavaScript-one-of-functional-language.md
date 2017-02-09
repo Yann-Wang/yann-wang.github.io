@@ -1,4 +1,5 @@
 ---
+layout: post
 title: JavaScript是函数式语言吗？
 date: 2016-09-20 20:40:55
 tags:

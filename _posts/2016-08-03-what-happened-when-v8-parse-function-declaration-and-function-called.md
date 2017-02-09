@@ -1,4 +1,5 @@
 ---
+layout: post
 title: v8在解析function声明和function调用时做了什么
 date: 2016-08-03 23:59:40
 tags:
@@ -8,11 +9,9 @@ tags:
 - v8
 ---
 
-- 本文来自w3c官方网站对　ES5标准文档[［可执行代码与执行环境］](https://www.w3.org/html/ig/zh/wiki/ES5/execution)　一文的部分引用
+本文来自w3c官方网站对　ES5标准文档[［可执行代码与执行环境］](https://www.w3.org/html/ig/zh/wiki/ES5/execution)　一文的部分引用
 
-<!-- more -->
-
-### v8解析［function调用］时做了什么
+#### v8解析［function调用］时做了什么
 
 - 进入函数代码
 
@@ -21,6 +20,7 @@ tags:
     1. 如果函数代码是严格模式下的代码，设 this 绑定 为 thisArg。
     2. 否则如果 thisArg 是 null 或 undefined，则设 this 绑定 为全局对象。  
     3. 否则如果 Type(thisArg) 的结果不为 Object，则设 this 绑定 为 ToObject(thisArg)。  
+    <!-- more -->
     4. 否则设 this 绑定 为 thisArg。  
     5. 以 F 的 [[Scope]] 内部属性为参数调用 NewDeclarativeEnvironment(见下边)，并令 localEnv 为调用的结果。  
     6. 设 词法环境组件 为 localEnv。  
@@ -95,9 +95,9 @@ tags:
             2. 以 dn、undefined 和 strict 为参数，调用 env 的 SetMutableBinding 具体方法。
 
 
-### v8解析［function定义］时做了什么
+#### v8解析［function定义］时做了什么
 
-#### 按源码顺序遍历 code，对于每一个 FunctionDeclaration f：
+##### 按源码顺序遍历 code，对于每一个 FunctionDeclaration f：
     
 1. 令 fn 为 FunctionDeclaration f 中的 Identifier。        
 2. 按第 13 章中所述的步骤初始化 FunctionDeclaration f ，并令 fo 为初始化的结果。
@@ -117,7 +117,7 @@ tags:
 
 6. 以 fn、fo 和 strict 为参数，调用 env 的 SetMutableBinding 具体方法。
 
-#### 初始化 FunctionDeclaration f :
+##### 初始化 FunctionDeclaration f :
     
 产生式 FunctionDeclaration : function Identifier ( FormalParameterListopt ) { FunctionBody } 依照定义绑定初始化 (10.5) 如下初始化：
 
@@ -138,7 +138,7 @@ tags:
 
 注： 可以从 FunctionExpression 的 FunctionBody 里面引用 FunctionExpression 的 Identifier，以允许函数递归调用自身。然而不像FunctionDeclaration，FunctionExpression 的 Identifier 不能被范围封闭的 FunctionExpression 引用，也不会影响它。
 
-#### 创建一个新函数对象:
+##### 创建一个新函数对象:
     
 指定 FormalParameterList 为可选的 参数列表，指定 FunctionBody 为 函数体，指定 Scope 为词法环境，Strict 为布尔标记，按照如下步骤构建函数对象：
 
@@ -170,7 +170,7 @@ tags:
 
 注：每个函数都会自动创建一个 prototype 属性，以满足函数会被当作构造器的可能性。
 
-#### [[Call]]
+##### [[Call]]
 
 当用一个 this 值、一个参数列表调用函数对象 F 的 [[Call]] 内部方法，采用以下步骤：
 
@@ -181,7 +181,7 @@ tags:
 5. 如果 result.type 是 return 则返回 result.value。
 6. 否则 result.type 必定是 normal。返回 undefined。
 
-#### [[Construct]]
+##### [[Construct]]
 
 当以一个可能的空的参数列表调用函数对象 F 的 [[Construct]] 内部方法，采用以下步骤：
 
@@ -196,7 +196,7 @@ tags:
 9. 如果 Type(result) 是 Object，则返回 result。
 10. 返回 obj。
 
-#### [[ThrowTypeError]] 函数对象
+##### [[ThrowTypeError]] 函数对象
 
 [[ThrowTypeError]] 对象是个唯一的函数对象，如下只定义一次：
 

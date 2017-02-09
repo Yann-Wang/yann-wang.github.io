@@ -1,5 +1,6 @@
 ---
-title: JavaScript　new 操作符的执行过程
+layout: post
+title: JavaScript new 操作符的执行过程
 date: 2016-07-25 10:39:06
 tags:
 - new
@@ -7,19 +8,23 @@ tags:
 - execution environment
 ---
 
-### 《JavaScript高级程序设计》中的描述
+今天来聊下JavaScript new操作符的执行过程, 考虑到讨论的内容为基础内容, 还是经典书籍
+和标准文档的描述更为严谨, 所以将红宝书和权威指南上的描述总结如下, 最后摘录了JavaScript标准文档
+中对JavaScript new操作符的执行过程的描述。
+
+
+#### 《JavaScript高级程序设计》中的描述
 
 - 使用new 操作符调用构造函数，会进行以下步骤：
     1. 创建一个新函数对象；
     2. 调用构造函数产生的执行环境中的this指向这个新对象；  //该构造函数 不是 新对象 的方法
     3. 执行构造函数中的代码（为新函数对象添加属性）；
     4. 如果函数没有返回其它对象，那么返回这个新函数对象。
-<!-- more -->
 - 构造函数的prototype属性被用作新对象的原型
 - 以上是一个原子操作过程。
+<!-- more -->
 
-
-### 《JavaScript权威指南》中的描述
+#### 《JavaScript权威指南》中的描述
 
 - 当计算一个对象创建表达式的值时， 和对象初始化表达式通过{}创建对象的做法一样，Javascript首先创建一个新的空对象， 然后， javascirpt通过传入指定的参数并将这个新对象当作this的值来调用一个指定的函数。这个函数可以使用this来初始化这个新创建对象的属性。
   
@@ -45,7 +50,7 @@ tags:
     hh2.dd2()  // Uncaught TypeError: hh2.dd2 is not a function(…)
     {% endhighlight %}
 
-### ES5标准文档：对[调用构造函数](https://www.w3.org/html/ig/zh/wiki/ES5/functions#FunctionDeclaration)的描述
+#### ES5标准文档：对[调用构造函数](https://www.w3.org/html/ig/zh/wiki/ES5/functions#FunctionDeclaration)的描述
 
 - 当以一个可能的空的参数列表调用函数对象 F 的 [[Construct]] 内部方法，采用以下步骤：
     1. 令 obj 为新创建的 ECMAScript 原生对象。

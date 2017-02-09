@@ -1,0 +1,22 @@
+.nav{
+  padding:1px;
+}
+
+.logo{
+  display:inline-block;
+  margin-top:8px;
+  margin-left: 132px;
+  text-decoration: none;
+  color: #444;
+}
+
+.logo-bd {
+  display: inline;
+  font: 300 50px/2 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+
+  @media screen and (max-width: 768px) {
+    line-height: 1;
+    font-size: 1.8em;
+  }
+
+}

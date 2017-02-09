@@ -1,0 +1,20 @@
+.contents {
+  background-color: #fff;
+  min-height: 800px;
+  height: 100%;
+  width:100%;
+}
+
+.page-content {
+  width: 60%;
+  margin: 0 auto;
+  border-left: 2px solid #4fba6f;
+  padding: 0 20px 0 20px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+
+  }
+}

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 移动web中的触摸事件
 date: 2016-11-03 20:40:55
 tags:

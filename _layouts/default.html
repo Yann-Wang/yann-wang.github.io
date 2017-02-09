@@ -1,0 +1,28 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <div class="contents">
+        {% include header.html %}
+
+        <div class="page-content">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
+
+        {% include footer.html %}
+    </div>
+
+
+<!--{% if site.analytics %}-->
+<!--{% include analytics.html %}-->
+<!--{% endif %}-->
+
+</body>
+</html>

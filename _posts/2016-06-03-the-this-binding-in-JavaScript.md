@@ -1,4 +1,5 @@
 ---
+layout: post
 title: JavaScript中的this绑定
 date: 2016-06-03 11:44:51
 tags:
@@ -6,16 +7,23 @@ tags:
 - bind
 
 ---
+this绑定的分类：
++ 默认绑定
++ 软绑定
++ 隐式绑定
++ 显式绑定
++ 硬绑定
++ new绑定
++ => 箭头函数 this绑定
 
+<!-- more -->
 
-### 默认绑定：
+#### 默认绑定：
 - non-strict mode ： this 指向全局对象；
 - strict mode          :  this 绑定 undefined
   注：决定this绑定对象的并不是调用位置是否处于严格模式，而是函数体是否处于严格模式。
 
-<!-- more -->
-
-### 软绑定
+#### 软绑定
 - 给默认绑定指定一个全局对象和undefined以外的值，可以实现和硬绑定相同的效果，同时保留隐式绑定或者显式绑定修改this的能力。
 - 对指定的函数进行封装，首先检查调用时的this，如果this绑定到全局对象或者undefined， 那就把指定的默认对象obj绑定到this， 否则不会修改this。
 
@@ -59,11 +67,11 @@ setTimeout(obj2.foo, 10); // name: obj  // 软绑定  在浏览器中
 
 {% endhighlight %}
 
-### 隐式绑定
+#### 隐式绑定
 - 调用位置的上下文对象；
 - 隐式丢失: 传入回调函数时会发生隐式赋值
 
-### 显式绑定
+#### 显式绑定
 - .call
 - .apply
 - .forEach  (not support es3)
@@ -103,7 +111,7 @@ setTimeout(obj2.foo, 10); // name: obj  // 软绑定  在浏览器中
     });
     {% endhighlight %}
 
-### new绑定
+#### new绑定
 
 1. 创建一个新对象；
 
@@ -113,7 +121,11 @@ setTimeout(obj2.foo, 10); // name: obj  // 软绑定  在浏览器中
 
 4. 如果函数没有返回其它对象，那么返回这个新对象。
 
-### 更安全的this
+#### =>  箭头函数 this 绑定
+- 继承外层作用域this 绑定
+- this 绑定不可被修改
+
+#### 更安全的this
 
 {% highlight javascript %}
 //空的非委托对象
@@ -124,7 +136,7 @@ var   ∅ = Object.create(null);
 
 - Object.create(null) 和 {} 很像， 但是并不会创建Object.prototype这个委托， 所以它比{} “更空”。
 
-### this间接引用
+#### this间接引用
 
 {% highlight javascript %}
 function foo(){
@@ -150,9 +162,7 @@ bar();   //  2
 
 - 赋值表达式p.foo = o.foo的返回值是目标函数的引用，因此调用位置是foo()而不是p.foo()或者o.foo()。
 
-### =>  箭头函数 this 绑定
-- 继承外层作用域this 绑定
-- this 绑定不可被修改
+
 
 
 
