@@ -2,12 +2,7 @@
 layout: post
 title: 为什么加入overflow:hidden即可清除浮动呢？
 date: 2016-10-10 20:40:55
-tags:
-- CSS
-- BFC
-- overflow:hidden
-- clear float
-
+tags: [CSS, BFC, overflow hidden, clear float]
 ---
 
 #### Box: CSS布局的基本单位

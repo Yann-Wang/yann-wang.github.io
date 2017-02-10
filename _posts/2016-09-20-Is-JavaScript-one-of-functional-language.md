@@ -2,10 +2,7 @@
 layout: post
 title: JavaScript是函数式语言吗？
 date: 2016-09-20 20:40:55
-tags:
-- functional language
-- javascript
-
+tags: [functional language, javascript]
 ---
 
 - javascript 属于没有明确归类的语言，或者好听点叫“多范式语言”。

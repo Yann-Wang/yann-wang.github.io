@@ -2,10 +2,7 @@
 layout: post
 title: JavaScript中的this绑定
 date: 2016-06-03 11:44:51
-tags:
-- this
-- bind
-
+tags: [this, binding]
 ---
 this绑定的分类：
 + 默认绑定

@@ -2,10 +2,7 @@
 layout: post
 title: JavaScript new 操作符的执行过程
 date: 2016-07-25 10:39:06
-tags:
-- new
-- operation
-- execution environment
+tags: [new, operation, execution environment]
 ---
 
 今天来聊下JavaScript new操作符的执行过程, 考虑到讨论的内容为基础内容, 还是经典书籍

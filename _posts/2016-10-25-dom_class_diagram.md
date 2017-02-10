@@ -2,11 +2,7 @@
 layout: post
 title: DOM类的UML类图
 date: 2016-10-25 20:40:55
-tags:
-- dom
-- UML
-- class diagram
-
+tags: [dom,UML,class diagram]
 ---
 
 今天聊下客户端javascript中的dom对象的原型继承关系

@@ -2,10 +2,7 @@
 layout: post
 title: 函数式语言的特点
 date: 2016-09-16 21:40:55
-tags:
-- functional language
-- functional programming
-
+tags: [functional language, functional programming]
 ---
 
 

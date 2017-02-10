@@ -2,10 +2,7 @@
 layout: post
 title: Node.js中的async模块的内部实现
 date: 2016-07-03 11:44:51
-tags:
-- async
-- inner implementing
-- source code
+tags: [async, inner implementing, source code]
 ---
 
 Async.js中的.each和.eachSeries

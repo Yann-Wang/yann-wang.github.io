@@ -2,11 +2,7 @@
 layout: post
 title: v8在解析function声明和function调用时做了什么
 date: 2016-08-03 23:59:40
-tags:
-- execution environment
-- function declaration
-- function call
-- v8
+tags: [execution environment, function declaration, function call, v8]
 ---
 
 本文来自w3c官方网站对　ES5标准文档[［可执行代码与执行环境］](https://www.w3.org/html/ig/zh/wiki/ES5/execution)　一文的部分引用

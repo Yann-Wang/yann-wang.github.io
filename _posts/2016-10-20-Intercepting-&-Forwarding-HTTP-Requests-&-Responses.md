@@ -2,10 +2,7 @@
 layout: post
 title: 请求拦截及转发
 date: 2016-10-20 20:40:55
-tags:
-- intercept request
-- forward request
-
+tags: [intercept request, forward request]
 ---
 
 今天聊下请求拦截及转发的位置
