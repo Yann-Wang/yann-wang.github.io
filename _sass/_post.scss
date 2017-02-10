@@ -24,3 +24,31 @@ h4{
 h5{
   font:normal 18px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+p,ul,li{
+  font-size:16px;
+}
+
+.table{
+  margin:0 auto;
+  border-collapse: collapse;
+  th{
+    border-bottom: 2px solid #ddd;
+  }
+  td{
+    border-top: 1px solid #ddd;
+    padding: 7px 20px;
+    line-height: 1.4;
+  }
+  @media screen and(max-width:768px){
+    td{
+      padding: 7px 10px;
+    }
+  }
+}
+
+.references{
+  width: 200px;
+  margin-top: 60px;
+  border-bottom: 2px solid #95a5a6;
+}
