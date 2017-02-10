@@ -22,7 +22,7 @@ tags: [dom,UML,class diagram]
 
 
 代码验证
-
+<script async src="//jsfiddle.net/spray/99eLwgye/8/embed/"></script>
 
 ![html dom class diagram](http://okup5z621.bkt.clouddn.com/html_dom_class_diagram.png "html dom class diagram")
 
