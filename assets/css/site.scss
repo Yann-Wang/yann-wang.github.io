@@ -4,7 +4,16 @@
 @import 'base';
 @import 'head';
 @import 'default';
-@import 'post';
-@import 'page';
-@import 'index';
-@import 'syntax-highlighting';
+
+.home{
+  @import 'index';
+  @import 'syntax-highlighting';
+}
+
+.post{
+  @import 'post';
+}
+
+.page{
+  @import 'page';
+}

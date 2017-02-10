@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 词法作用域与函数式语言
-date: 2016-10-01 20:40:55
+date: 2016-10-01 
 tags: [functional language, lexical scope, dynamic scope]
 ---
 

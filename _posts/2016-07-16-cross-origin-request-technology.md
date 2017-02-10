@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 跨域请求技术
-date: 2016-07-16 21:40:55
+date: 2016-07-16 
 tags: [cross origin, CORS, imgPing, jsonp, Comet, Server-Sent Events, Web Socket]
 ---
 本文来总结下常用的6种跨域请求技术：跨域资源共享CORS, 图像Ping, JSONP, Comet, 服务器发送事件, Web Socket 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DOM类的UML类图
-date: 2016-10-25 20:40:55
+date: 2016-10-25 
 tags: [dom,UML,class diagram]
 ---
 
