@@ -1,7 +1,7 @@
 ---
 layout: post
 title: emoji符号的编码
-date: 2016-11-15 
+date: 2016-12-01 
 tags: [emoji, symbol]
 ---
 
@@ -17,51 +17,6 @@ tags: [emoji, symbol]
 
 <!-- more -->
 
-#### XML和Unicode
->XML及其子集XHTML采用UTF-8作为标准字集，理论上我们可以在各种支持XML标准的浏览器上显示
-任何地区文字的网页，只要电脑本身安装有合适的字体即可。
-可以利用&#nnn;的格式显示特定的字符。nnn代表该字符的十进制Unicode代码。
-如果采用十六进制代码，在编码之前加上x字符即可。但部分旧版本的浏览器可能无法识别十六进制代码。
-由于Unicode版本发展原因，很多浏览器只能显示UCS-2完整字符集，也即现在使用的Unicode版本中的一个小子集。
-
-#### XML与HTML字符实体引用
->在SGML、 HTML与XML文档，如果某些Unicode字符在文档的当前编码方式(如ISO-8859-1)
-中不能直接表示，那么可以通过字符值引用或者字符实体引用两种转义序列来表示这些不能直接编码的字符。
-下文列出在HTML与XML文档中有效的字符实体引用。
-
-XML规范定义了5个"预定义实体"来表示特殊字符.
-
-|引用格式  |   字符 |  Unicode编码 |
-|:-------:|:-----:|:-----------:|
-| &amp;quot;  |  "    | U+0022 (34) |
-| &amp;amp;   |  &    | U+0026 (38) |
-| &amp;apos;  |  '    | U+0027 (39) |
-| &amp;lt;    |  <    | U+003C (60) |
-| &amp;gt;    |  >    | U+003E (62) |
-{: .table}
-
-##### HTML中的字符实体引用
-HTML 4 DTD定义了252个命名实体。HTML 4规范要求使用标准DTD，并且不允许用户定义其它的命名实体.
-
-#### 字符值引用
->字符值引用 (numeric character reference, NCR)是在标记语言SGML以及派生的
-如HTML与XML中常见的一种转义序列结构，用来表示Unicode的通用字符集 (UCS)中的单个字符. 
-NCR可以表示在一个特定文档中不能直接编码的字符，而该标记语言阅读器软件把每个NCR当作一个字符来处理。
-
->例如，在ISO/IEC 8859-1编码的网页文件中使用了俄文字母或者希腊字母。
-由于该编码不支持这些字母，就需要用NCR来表示。网页浏览器可以正确地把这些NCR绘制为相应的
-西里尔字母或希腊字母。
-
-在SGML, HTML, XML中, 下述是希腊字母Sigma的有效的字符值引用:
-
-| 标记语言中的字符值引用|   进位制 |   Unicode字符 |
-|:-------:|:---------:|:-----------:|
-| &amp;#931;  |  十进制    | U+03A3 |
-| &amp;#0931; |  十进制    | U+03A3 |
-| &amp;#x3A3; |  十六进制  | U+03A3 |
-| &amp;#x03A3;|  十六进制  | U+03A3 |
-| &amp;#x3a3; |  十六进制  | U+03A3 |
-{: .table}
 
 #### emoji目前的支持程度
 目前，一些Windows Phone手机和iPhone设备都已经内置了emoji表情图释，emoji图释
@@ -79,6 +34,70 @@ Emoji在Google Hangouts应用中也可以使用（独立于键盘）。
 对应的html编码为 &amp;#x1F602;
 
 所以emoji符号的html编码格式为： &#x + 十六进制 + ;
+
+对应的unicode编码为 U+1f602
+
+对应的uft8编码为 \xF0\x9F\x98\x82   
+
+由上一篇文章可知，基本多文种平面字符占用2字节的编码空间，辅助平面字符占用4字节编码空。
+而emoji字符既有基本多文种平面字符，也有辅助平面字符, 上例中的字符属于辅助平面字符，所以它占4字节编码空间。
+
+
+其它emoji符号的unicode编码和utf8编码可以查询[这里](http://apps.timwhitlock.info/emoji/tables/unicode#block-2-dingbats)
+
+代码验证
+
+在浏览器中：
+{% highlight html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+</head>
+<body>
+    <p class="p1">😂</p>
+    <p class="p2">&#x1F602;</p>
+    <p class="p3"></p>
+    <p class="p4"></p>
+    <script>
+        let $ = function (selector) {
+            return document.querySelector(selector);
+        };
+        let lg = console.log.bind(console);
+
+        $('.p3').textContent = '\xF0\x9F\x98\x82';
+        $('.p4').textContent = '&#x1F602;';
+        
+        lg($('.p1').textContent);        
+
+    </script>
+</body>
+</html>
+{% endhighlight %}
+
+在Node.js中：
+{% highlight javascript %}
+'use strict';
+let fs = require('fs-extra');
+
+const buf = Buffer.from('😂'); // default :uft8
+let strhex = buf.toString('hex');
+
+console.log(strhex); // 'f09f9882'
+
+
+const buf2 = Buffer.from([0xf0,0x9f,0x98,0x82]);
+let str2 = buf2.toString();
+
+fs.outputFile("./build/file.js", str2, function (err) {
+    console.log("output to file.js successfully.");
+    // execute callback
+});
+
+{% endhighlight %}
 
 你可能会意识到，好像跟你之前见到的不一样。 恩， 是不一样，但上面的样子才是其编码的最原始的样子。
 你通常所看到的样子都是各个公司重新实现的该编码所对应的图片，如下面所示：
@@ -121,11 +140,5 @@ Emoji在Google Hangouts应用中也可以使用（独立于键盘）。
 <div class="references">references</div>
 
 [wikipedia](https://en.wikipedia.org/wiki/Emoji)
-
-[Unicode](https://en.wikipedia.org/wiki/Unicode)
-
-[List of XML and HTML character entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
  
-[numeric character reference, NCR](https://en.wikipedia.org/wiki/Numeric_character_reference) 
- 
-[常用HTML转义字符](http://zqdevres.qiniucdn.com/data/20120726145112/index.html) 
+[Emoji Unicode Tables](http://apps.timwhitlock.info/emoji/tables/unicode#block-2-dingbats) 
