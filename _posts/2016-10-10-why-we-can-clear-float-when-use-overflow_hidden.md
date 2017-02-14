@@ -40,6 +40,7 @@ tags: [CSS, BFC, overflow hidden, clear float]
 - 其实，这是CSS2.1中定义的一个叫BFC(Block formatting context)的概念在起作用。所谓BFC，可直译为“块格式化上下文”，BFC定义了一块独立的渲染区域，规定了其内部块级元素的渲染规则，其渲染效果不受外界环境的干扰。
 - 使用overflow:hidden清除浮动就分别用到了规则的6和4。
 
-#### citation
+<div class="references">references</div>
+
 - BFC [神奇背后的原理](http://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html)
 

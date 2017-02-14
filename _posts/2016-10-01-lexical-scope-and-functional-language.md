@@ -36,6 +36,7 @@ tags: [functional language, lexical scope, dynamic scope]
 
 
 
-###### citation
+<div class="references">references</div>
+
 - [词法作用域与函数式编程语言](https://zhuanlan.zhihu.com/p/23661004)
 - [Scope (computer science)](https://en.wikipedia.org/wiki/Scope_(computer_science))
