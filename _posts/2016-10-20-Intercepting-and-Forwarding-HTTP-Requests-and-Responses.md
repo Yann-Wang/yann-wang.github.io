@@ -37,7 +37,7 @@ tags: [intercept request, forward request]
 var http_proxy = require('http-proxy');
 var http       = require('http');
 
-var proxy      = http_proxy.createProxyServer({});
+var proxy      = http_proxy.createProxyServer({ });
 
 proxy.on(function(err,req,res){
     res.writeHead(500,{
@@ -45,7 +45,7 @@ proxy.on(function(err,req,res){
     });
 });
 
-var server=http.createServer(function(req,res){
+var server=http.createServer( function (req, res){
     var host= req.headers.host;
     console.log(host);
     switch(host){

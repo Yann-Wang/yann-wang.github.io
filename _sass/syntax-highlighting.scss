@@ -1,6 +1,6 @@
-.highlight  { background: #222827; color: #f8f8f2; }
+.highlight  { background: #222827; color: #f8f8f2;margin:0; }
 .highlight pre{ white-space: pre-wrap;margin:0;padding:10px; }
-.highlight code { font: 400 normal 14px/20px Roboto Mono,monospace; }
+.highlight code { width:100%;font: 400 normal 14px/20px Roboto Mono,monospace; }
 
 /* Comment */
 .highlight .c { color: #75715e; }
