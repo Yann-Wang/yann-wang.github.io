@@ -25,7 +25,6 @@ this绑定的分类：
 - 对指定的函数进行封装，首先检查调用时的this，如果this绑定到全局对象或者undefined， 那就把指定的默认对象obj绑定到this， 否则不会修改this。
 
 {% highlight javascript %}
-
 if (!Function.prototype.softBind){
   Function.prototype.softBind = function(obj) {
        var fn = this;  // this指代的是调用softBind的那个函数对象，即foo
@@ -81,32 +80,31 @@ setTimeout(obj2.foo, 10); // name: obj  // 软绑定  在浏览器中
 
     - .bind  (not support es3)
     
-        foo.bind(obj) 会返回一个硬编码的新函数， 它会把参数obj设置为this绑定并调用原始函数foo
+        - foo.bind(obj) 会返回一个硬编码的新函数， 它会把参数obj设置为this绑定并调用原始函数foo
         
     - 手动硬绑定  会比bind函数的性能更好些
-        
-    {% highlight javascript %}
-    var EventEmitter = require('events');
-    var util = require('util');
-    
-    function MyThing() {
-      EventEmitter.call(this);
-    
-      doFirstThing();
-      setImmediate(emitThing1, this);
-    }
-    util.inherits(MyThing, EventEmitter);
-    
-    function emitThing1(self) {
-      self.emit('thing1');
-    }
-    
-    var mt = new MyThing();
-    
-    mt.on('thing1', function onThing1() {
-      // Whoot!
-    });
-    {% endhighlight %}
+{% highlight javascript %}
+var EventEmitter = require('events');
+var util = require('util');
+
+function MyThing() {
+  EventEmitter.call(this);
+
+  doFirstThing();
+  setImmediate(emitThing1, this);
+}
+util.inherits(MyThing, EventEmitter);
+
+function emitThing1(self) {
+  self.emit('thing1');
+}
+
+var mt = new MyThing();
+
+mt.on('thing1', function onThing1() {
+  // Whoot!
+});
+{% endhighlight %}
 
 #### new绑定
 

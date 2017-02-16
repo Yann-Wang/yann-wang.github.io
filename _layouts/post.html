@@ -1,22 +1,49 @@
 ---
-layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html>
 
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d,
-                %Y" }}
-            </time>
-        </p>
-    </header>
+{% include head_post.html %}
 
-    <div class="post-content" itemprop="articleBody">
-        {{ content }}
+<body>
+
+<div class="contents">
+    {% include header.html %}
+
+    <div class="page-content">
+        <div class="wrapper">
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+                <header class="post-header">
+                    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+                    <p class="post-meta">
+                        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d,
+                            %Y" }}
+                        </time>
+                    </p>
+                </header>
+
+                <div class="post-content" itemprop="articleBody">
+                    {{ content }}
+                </div>
+            </article>
+            <br/>
+            <br/>
+
+            <!--{% if site.disqus-shortname %}{% include disqus.html %}{% endif %}-->
+        </div>
     </div>
-</article>
-<br/>
-<br/>
 
-<!--{% if site.disqus-shortname %}{% include disqus.html %}{% endif %}-->
+    {% include footer.html %}
+</div>
+
+
+<!--{% if site.analytics %}-->
+<!--{% include analytics.html %}-->
+<!--{% endif %}-->
+
+</body>
+</html>
+
+
+

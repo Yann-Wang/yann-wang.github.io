@@ -1,3 +1,11 @@
+---
+---
+
+@import 'base';
+@import 'fonts';
+@import 'head';
+@import 'syntax-highlighting';
+
 .contents {
   background-color: #fff;
   min-height: 800px;
@@ -17,4 +25,8 @@
     box-shadow: none;
 
   }
+}
+
+.post{
+  @import 'post';
 }

@@ -26,6 +26,7 @@ gems:
 
 excerpt_separator: <!-- more -->
 
+highlighter: pygments
 
 #disqus-shortname: webjeda-demo
 #analytics: UA-83979019-1
