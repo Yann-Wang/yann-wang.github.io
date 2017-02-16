@@ -8,6 +8,9 @@
   margin-left: 132px;
   text-decoration: none;
   color: #444;
+  @media screen and (max-width: 768px){
+    margin-left: 0;
+  }
 }
 
 .logo-bd {

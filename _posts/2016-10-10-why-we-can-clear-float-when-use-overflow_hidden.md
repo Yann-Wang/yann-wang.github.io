@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 为什么加入overflow:hidden即可清除浮动呢？
+title: '为什么加入overflow : hidden即可清除浮动呢？'
 date: 2016-10-10
 tags: [CSS, BFC, overflow hidden, clear float]
 ---
@@ -10,7 +10,9 @@ tags: [CSS, BFC, overflow hidden, clear float]
     - block-level box:display 属性为 block, list-item, table 的元素，会生成 block-level box。并且参与 block fomatting context；
     - inline-level box:display 属性为 inline, inline-block, inline-table 的元素，会生成 inline-level box。并且参与 inline formatting context；
     - run-in box: css3 中才有， 这儿先不讲了。
+    
 <!-- more -->
+
 ##### Formatting context
 - Formatting context 是 W3C CSS2.1 规范中的一个概念。它是页面中的一块渲染区域，并且有一套渲染规则，它决定了其子元素将如何定位，以及和其他元素的关系和相互作用。最常见的 Formatting context 有 Block fomatting context (简称BFC)和 Inline formatting context (简称IFC)。
 - CSS2.1 中只有 BFC 和 IFC, CSS3 中还增加了 GFC 和 FFC。
@@ -29,10 +31,10 @@ tags: [CSS, BFC, overflow hidden, clear float]
 
 #### 那么，在什么情况下，元素的BFC才能生效呢？
 - 根据CSS规范，当给元素添加下列Style属性时，元素成为一个BFC元素。
-    - float为 left|right
-    - overflow为 hidden|auto|scroll
-    - display为 table-cell|table-caption|inline-block|flex|inline-flex
-    - position为 absolute|fixed
+    - float为 left / right
+    - overflow为 hidden / auto / scroll
+    - display为 table-cell / table-caption / inline-block / flex / inline-flex
+    - position为 absolute / fixed
 
 #### 为什么加入overflow:hidden即可清除浮动呢？
 > overflow: hidden;在布局时有神奇的治理布局塌方的功效。

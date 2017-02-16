@@ -2,7 +2,7 @@
 title: Catullus
 email: a_waves@163.com
 description: a Latin poet of the late Roman Republic
-url: "http://wangyn.net/" # the base hostname & protocol for your site
+#url: "http://wangyn.net/" # the base hostname & protocol for your site
 baseurl: ""
 
 # Build settings
@@ -26,7 +26,7 @@ gems:
 
 excerpt_separator: <!-- more -->
 
-highlighter: pygments
+highlighter: rouge
 
 #disqus-shortname: webjeda-demo
 #analytics: UA-83979019-1
