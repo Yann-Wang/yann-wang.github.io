@@ -28,5 +28,8 @@ excerpt_separator: <!-- more -->
 
 highlighter: rouge
 
+paginate: 5
+paginate_path: "/page:num"
+
 #disqus-shortname: webjeda-demo
 #analytics: UA-83979019-1
