@@ -93,4 +93,7 @@ p,ul,li{
   width: 200px;
   margin-top: 60px;
   border-bottom: 2px solid #95a5a6;
+  @media screen and(max-width:768px){
+    width: 105px;
+  }
 }
