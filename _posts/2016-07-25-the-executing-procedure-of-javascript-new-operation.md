@@ -27,25 +27,23 @@ tags: [new, operation, execution environment]
   
 - 那些被当成构造函数的函数不会返回一个值， 并且这个新创建并被初始化后的对象就是整个对象创建表达式的值。如果一个构造函数确实返回了一个对象值， 那么这个对象就作为整个对象创建表达式的值，而新创建的对象就废弃了。
 
-    {% highlight javascript %}    
-    function dd(){ this.ss = 5; return {aa:6}; }
-    var hh = new dd();
-    
-    hh.ss   // undefined
-    hh.aa   // 6    
-    {% endhighlight %}
+{% highlight javascript %}    
+function dd(){ this.ss = 5; return {aa:6}; }
+var hh = new dd();
 
-    {% highlight javascript %}
-    function dd2(){ this.ss2 = 4; }
-    var hh2 = new dd2();
-    
-    hh2.ss2   // 4
-    hh2.dd2   // undefined
-    hh2       // dd2 {ss2: 4}
-    hh2.toString()   // "[object Object]"
-    hh2()     // Uncaught TypeError: hh2 is not a function(…)
-    hh2.dd2()  // Uncaught TypeError: hh2.dd2 is not a function(…)
-    {% endhighlight %}
+console.log(hh.ss);   // undefined
+console.log(hh.aa);   // 6    
+
+function dd2(){ this.ss2 = 4; }
+var hh2 = new dd2();
+
+console.log(hh2.ss2);   // 4
+console.log(hh2.dd2);   // undefined
+console.log(hh2);       // dd2 {ss2: 4}
+console.log(hh2.toString());   // "[object Object]"
+console.log(hh2());     // Uncaught TypeError: hh2 is not a function(…)
+console.log(hh2.dd2());  // Uncaught TypeError: hh2.dd2 is not a function(…)
+{% endhighlight %}
 
 #### ES5标准文档：对[调用构造函数](https://www.w3.org/html/ig/zh/wiki/ES5/functions#FunctionDeclaration)的描述
 
