@@ -34,15 +34,23 @@ var hh = new dd();
 console.log(hh.ss);   // undefined
 console.log(hh.aa);   // 6    
 
-function dd2(){ this.ss2 = 4; }
+
+function dd2(){ this.ss = 5; return 'ssssss'; }
 var hh2 = new dd2();
 
-console.log(hh2.ss2);   // 4
-console.log(hh2.dd2);   // undefined
-console.log(hh2);       // dd2 {ss2: 4}
-console.log(hh2.toString());   // "[object Object]"
-console.log(hh2());     // Uncaught TypeError: hh2 is not a function(…)
-console.log(hh2.dd2());  // Uncaught TypeError: hh2.dd2 is not a function(…)
+console.log(hh2.ss);  // 5
+console.log(hh2.aa);   // undefined
+
+
+function dd3(){ this.ss3 = 4; }
+var hh3 = new dd3();
+
+console.log(hh3.ss3);   // 4
+console.log(hh3.dd3);   // undefined
+console.log(hh3);       // dd3 {ss3: 4}
+console.log(hh3.toString());   // "[object Object]"
+console.log(hh3());     // Uncaught TypeError: hh3 is not a function(…)
+console.log(hh3.dd3());  // Uncaught TypeError: hh3.dd3 is not a function(…)
 {% endhighlight %}
 
 #### ES5标准文档：对[调用构造函数](https://www.w3.org/html/ig/zh/wiki/ES5/functions#FunctionDeclaration)的描述
