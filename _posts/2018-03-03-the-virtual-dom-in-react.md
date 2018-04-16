@@ -122,6 +122,8 @@ tags: [virtual dom, react]
 
 - 对于自定义组件，ReactCompositeComponent实现了一套React生命周期和setState机制
 
+- 由于元素节点的更新涉及到diff算法，而diff算法在15.x和16.x中是不一样的，所以咱不展示相关源码，这个之后在单独的文章中再讲。
+
 #### 文本节点的创建
 - 文本节点，本不算virtual dom元素，但为了保持渲染的一致性，将其封装为文本组件；如果该文本是通过createElement方法创建的节点，则为该节点创建相应的标签和标识domID（方便diff）；如果不是，将直接返回文本内容。
 
