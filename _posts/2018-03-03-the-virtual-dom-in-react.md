@@ -147,3 +147,8 @@ tags: [virtual dom, react]
   export default setTextContent;
 ```
 
+<div class="references">references</div>
+
+[深入React技术栈](https://book.douban.com/subject/26918038/) 
+[react source code](https://github.com/facebook/react)
+[Implementation Notes](https://reactjs.org/docs/implementation-notes.html)
