@@ -117,6 +117,6 @@ tags: [fiber, architecture, reconciler, react, 16.x]
 
 <div class="references">references</div>
 
-[react 16.3.1](https://github.com/facebook/react/releases/tag/v16.3.2)
-[react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
-[React v16.0](https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-core-architecture)
+- [react 16.3.1](https://github.com/facebook/react/releases/tag/v16.3.2)
+- [react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
+- [React v16.0](https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-core-architecture)
