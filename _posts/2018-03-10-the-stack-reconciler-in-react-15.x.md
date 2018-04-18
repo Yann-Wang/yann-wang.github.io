@@ -572,5 +572,7 @@ var ReactChildReconciler = {
 <div class="references">references</div>
 
 [reconciliation](https://reactjs.org/docs/reconciliation.html)
+
 [Implementation Notes](https://reactjs.org/docs/implementation-notes.html)
+
 [深入React技术栈](https://book.douban.com/subject/26918038/) 
