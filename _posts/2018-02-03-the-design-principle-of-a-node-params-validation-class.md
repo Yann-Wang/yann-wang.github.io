@@ -13,6 +13,8 @@ Github repo: https://github.com/Yann-Wang/params-verifier
 
 接下来从四个方面来介绍下这个包：背景、使用、设计思路、完善方向。
 
+<!-- more -->
+
 #### 背景
 
 所负责的一个node项目，后端代码已达到7万行，业务已越来越复杂，与此同时，产生了一个现象：service层的业务逻辑中掺杂了很多参数校验的代码（由于历史原因，controller层没有做好充分的参数校验）。
