@@ -162,12 +162,17 @@ ps: 补充点背景知识
 跨域后端配置
 
 for all methods:
+
 ```access-control-allow-credentials```
+
 ```access-control-allow-origin```
+
 ```access-control-expose-headers```
 
-For OPTIONS:
+for options:
+
 ```access-control-allow-methods```
+
 ```access-control-allow-headers```
 
 
