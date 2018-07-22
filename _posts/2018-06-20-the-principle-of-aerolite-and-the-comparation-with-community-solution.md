@@ -7,9 +7,9 @@ tags: [aerolite, file, download, file-download, callback, cors]
 
 先甩两个地址：
 
-```https://www.npmjs.com/package/aerolite```
+[```https://www.npmjs.com/package/aerolite```](https://www.npmjs.com/package/aerolite)
 
-```https://github.com/Yann-Wang/aerolite```
+[```https://github.com/Yann-Wang/aerolite```](https://github.com/Yann-Wang/aerolite)
 
 心急的老哥可能已经跳过去看了，没错， aerolite 是一款二进制文件下载器，它的特点是支持回调函数（在文件下载成功或失败时，调用对应的回调函数），并且解决了跨域情况下丢失文件名的问题；最后，它非常轻量，无任何依赖。
 
