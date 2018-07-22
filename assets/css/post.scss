@@ -55,18 +55,27 @@ a {
 
 h3{
   font:normal 23px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 }
 
 h4{
-  padding-bottom: 8px;
-  border-bottom: 1px solid #eee;
   font:normal 23px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 3px solid #e74c3c;
   margin: 50px 0 24px;
+  background-color: #f8f8f8;
+  line-height: 45px;
+  padding-left: 5px;
 }
 
 h5{
   font:normal 18px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-left: 6px solid #e74c3c;
+  padding-left: 5px;
+}
+
+h6{
+  border-left: 3px solid #e74c3c;
+  padding-left: 3px;
+  font:normal 16px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p,ul,li{
@@ -95,6 +104,7 @@ p,ul,li{
 .references{
   width: 200px;
   margin-top: 60px;
+  margin-bottom: 15px;
   border-bottom: 2px solid #95a5a6;
   @media screen and(max-width:768px){
     width: 105px;
