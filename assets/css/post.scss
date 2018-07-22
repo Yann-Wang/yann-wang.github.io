@@ -102,11 +102,16 @@ p,ul,li{
 }
 
 .references{
-  width: 200px;
   margin-top: 60px;
   margin-bottom: 15px;
+  font-size: 23px;
+  line-height: 32px;
   border-bottom: 2px solid #95a5a6;
+  background-color: #f8f8f8;
+  display: inline-block;
+  /*
   @media screen and(max-width:768px){
     width: 105px;
   }
+  */
 }
