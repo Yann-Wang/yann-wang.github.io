@@ -98,6 +98,7 @@ Ajax请求具有如下特点:
 
 如果后端没有配Content-Disposition头，则浏览器会跳转到openurl的指定路径， 去加载该文件内容（以pdf文件为例进行了测试）
 
+
 ##### 支持回调函数的解决方案
 
 大概有以下两种：
@@ -137,6 +138,7 @@ Ajax请求具有如下特点:
 - 技术角度
   - 单个接口中传递的cookie, 无法通过document.cookie读取
 
+
 ##### 支持回调函数&&跨域的解决方案
 
 - XMLHttpRequest.responseType=“blob” + a.download + Access-Control-Expose-Headers
@@ -168,11 +170,12 @@ For OPTIONS:
 ```access-control-allow-methods```
 ```access-control-allow-headers```
 
+
 #### aerolite 源码
 
 ajax请求二进制文件的逻辑
 
-```javascript
+{% highlight javascript %}
   function aerolite(url) {
     var r = new XMLHttpRequest()
     r.open('GET', url)
@@ -192,11 +195,11 @@ ajax请求二进制文件的逻辑
     }
     r.send(null)
   }
-```
+{% endhighlight %}
 
 触发浏览器下载的逻辑
 
-```javascript
+{% highlight javascript %}
   function createAndDownloadFile(fileName, content) {
     var aTag = document.createElement('a')
     var blob = new Blob([content])
@@ -208,11 +211,11 @@ ajax请求二进制文件的逻辑
     URL.revokeObjectURL(blob)
     aTag.parentNode.removeChild(aTag)
   }
-```
+{% endhighlight %}
 
 从Content-Disposition头提取文件名的逻辑
 
-```javascript
+{% highlight javascript %}
   function getFileName(name) {
     if (name) {
       var target = name.split(';').filter(function(item) {
@@ -224,7 +227,7 @@ ajax请求二进制文件的逻辑
     }
     return ''
   }
-```
+{% endhighlight %}
 
 
 <div class="references">references</div>
