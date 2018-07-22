@@ -52,7 +52,7 @@ Nginx可以加入许多扩展来帮助我们处理业务， 最典型的就是�
  
 所以， 在生产环境中， 永远把Nginx放置在Node.js的前端， 对性能、 安全性和将来的扩展都有益处。
   
-<div class="references">references</div>
+<div class="references">References</div>
 
 [Node.js实战（第2季）](https://book.douban.com/subject/26642320/)  
 

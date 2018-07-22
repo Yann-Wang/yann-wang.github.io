@@ -137,7 +137,7 @@ fs.outputFile("./build/file.js", str2, function (err) {
 #### node模块： 将emoji符号编码转换为对应的图片
 - [emoji](https://www.npmjs.com/package/emoji)
 
-<div class="references">references</div>
+<div class="references">References</div>
 
 [wikipedia](https://en.wikipedia.org/wiki/Emoji)
  

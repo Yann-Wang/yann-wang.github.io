@@ -104,7 +104,7 @@ NCR可以表示在一个特定文档中不能直接编码的字符，而该标�
 {: .table}
 
 
-<div class="references">references</div>
+<div class="references">References</div>
 
 [Unicode](https://en.wikipedia.org/wiki/Unicode)
 
