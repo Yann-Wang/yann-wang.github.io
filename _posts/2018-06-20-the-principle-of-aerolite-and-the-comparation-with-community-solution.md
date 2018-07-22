@@ -238,7 +238,8 @@ ajax请求二进制文件的逻辑
 此文由有赞赋能平台前端团队的一次内部分享整理而来，首发至个人博客http://wangyn.net/2018/06/20/the-principle-of-aerolite-and-the-comparation-with-community-solution.html
 
 
-<div class="references">references</div>
+<div class="references">References</div>
 
-- [Access-Control-Expose-Headers](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#Access-Control-Expose-Headers)
-- [XMLHttpRequest.responseType compatibility](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseType)
+[Access-Control-Expose-Headers](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#Access-Control-Expose-Headers)
+
+[XMLHttpRequest.responseType compatibility](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseType)
