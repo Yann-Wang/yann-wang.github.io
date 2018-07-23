@@ -118,13 +118,7 @@ Github repo: https://github.com/Yann-Wang/params-verifier
 
 - 每种数据类型只进行指定的部分校验步骤，如下：
 
-  | `validation rules`    | string | number | boolean | date | object |
-  | --------------------- | ------ | ------ | ------- | ---- | ------ |
-  | `tryCastType`         |        |   ✔    |    ✔    |  ✔   |        |
-  | `verifyType`          |   ✔    |   ✔    |    ✔    |  ✔   |    ✔   |
-  | `checkStringNotEmpty` |   ✔    |        |         |      |        |
-  | `verifyBusinessType`  |   ✔    |   ✔    |         |      |        |
-  | `runValidator`        |   ✔    |   ✔    |         |  ✔   |    ✔   |
+  ![validation rule](http://okup5z621.bkt.clouddn.com/validation-rule.jpeg)
 
 校验顺序由上到下执行。
 
