@@ -20,9 +20,9 @@ tags: [promise, execution environment]
 当javascript文件被载入浏览器时，　浏览器创建４个函数对象：Promise2, getThen, doResolve, Promise2.resolve（注意：函数体中的代码没有被解析）
 
 从调用Promise2.resolve函数开始
-    ![execution environment](http://okup5z621.bkt.clouddn.com/ExecutionEnvironment.png "execution environment") 
+    ![execution environment](/assets/img/ExecutionEnvironment.png "execution environment") 
 Promise2.resolve("Success")返回　一个对象，包括done属性和then属性，这两个属性的属性值都是一个函数．
-    ![execution environment 2](http://okup5z621.bkt.clouddn.com/ExecutionEnvironment2.png "execution environment 2") 
+    ![execution environment 2](/assets/img/ExecutionEnvironment2.png "execution environment 2") 
 
 Promise实现中包含了控制反转等面向对象的设计原则，函数参数的访问链是比较难分析的点．
 

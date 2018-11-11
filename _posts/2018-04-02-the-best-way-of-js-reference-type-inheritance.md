@@ -15,7 +15,7 @@ Javascript的继承有多种实现方式，大部分方式都有其致命的缺�
 
 原型链的实现方式就是一个类型的原型对象是另一个类型的实例，如下图。
 
-![prototype chain](http://okup5z621.bkt.clouddn.com/prototype-chain.jpeg)
+![prototype chain](/assets/img/prototype-chain.jpeg)
 
 该图来自《Javascript高级程序设计 第三版》
 

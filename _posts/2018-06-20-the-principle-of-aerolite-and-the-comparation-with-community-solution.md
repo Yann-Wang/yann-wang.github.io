@@ -26,7 +26,7 @@ tags: [aerolite, file, download, file-download, callback, cors]
 
 业务需求中一些文件下载场景，需要根据文件下载的成功和失败状态有不同的交互逻辑
 
-![file download dialog](http://okup5z621.bkt.clouddn.com/file-download-dialog-demo.jpeg)
+![file download dialog](/assets/img/file-download-dialog-demo.jpeg)
 
 比如上面的场景，如果要求在点击确认导出后开始下载文件，并且在文件下载成功后关闭Dialog，在文件下载失败后弹出一个Toast错误提示， 那么就需要文件下载器支持回调函数了。
 
@@ -70,7 +70,7 @@ Ajax请求具有如下特点:
 
 虽然后端配了Content-Disposition头，可以完成下载，但在控制台network中该请求会保持pending状态（有如下提示）
 
-![pending reminder](http://okup5z621.bkt.clouddn.com/a-and-stream-demo.jpeg)
+![pending reminder](/assets/img/a-and-stream-demo.jpeg)
 
 ###### a.download
 
@@ -114,7 +114,7 @@ Ajax请求具有如下特点:
 
 下面是responseType: blob的兼容性
 
-![responseType:blob compatibility](http://okup5z621.bkt.clouddn.com/xhr-responseType-blob-compatibility.jpeg)
+![responseType:blob compatibility](/assets/img/xhr-responseType-blob-compatibility.jpeg)
 
 还好嘛~
 
@@ -147,7 +147,7 @@ Ajax请求具有如下特点:
 
 因为跨域情况下无法读取后端传递的文件名，加上这个头后，js可以从Content-Disposition头的filename字段中提取出文件名（如下图）
 
-![access-control-expose-headers.jpeg](http://okup5z621.bkt.clouddn.com/access-control-expose-headers.jpeg)
+![access-control-expose-headers.jpeg](/assets/img/access-control-expose-headers.jpeg)
 
 
 ps: 补充点背景知识

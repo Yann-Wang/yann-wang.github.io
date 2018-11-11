@@ -24,7 +24,7 @@ tags: [dom,UML,class diagram]
 代码验证
 <script async src="//jsfiddle.net/spray/99eLwgye/embed/"></script>
 
-![html dom class diagram](http://okup5z621.bkt.clouddn.com/html_dom_class_diagram.png "html dom class diagram")
+![html dom class diagram](/assets/img/html_dom_class_diagram.png "html dom class diagram")
 
 1. EventTarget, Node, Element, HTMLElement, CharacterData, Document, HTMLDocument 都是抽象类
 2. HTMLElement, CharacterData, Attr, Document, DocumentType, DocumentFragment 直接实现了Node类
@@ -33,7 +33,7 @@ tags: [dom,UML,class diagram]
 5. HTMLStyleElement, HTMLLinkElement, HTMLScriptElement, HTMLImageElement, HTMLIframeElement, HTMLFormElement, HTMLInputElement, HTMLSelectElement, HTMLTextAreaElement 实现了抽象类HTMLElement
 
 
-![css dom class diagram](http://okup5z621.bkt.clouddn.com/css_dom_class_diagram.png "css dom class diagram")
+![css dom class diagram](/assets/img/css_dom_class_diagram.png "css dom class diagram")
 
 - 在CSS中，一个样式表可以包含多个样式规则，一个样式规则可以包含多个样式声明
 - CSSStyleDeclaration是一个声明对象

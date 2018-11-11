@@ -105,11 +105,11 @@ Github repo: https://github.com/Yann-Wang/params-verifier
 
 甩张UML类图，其实就是五种数据类型的子类对基类的继承。
 
-![params-verifier UML](http://okup5z621.bkt.clouddn.com/params-verifier-uml.jpeg)
+![params-verifier UML](/assets/img/params-verifier-uml.jpeg)
 
 ##### 参数在类方法中的流动顺序
 
-![params-verifier flow](http://okup5z621.bkt.clouddn.com/params-verifier-flow.jpeg)
+![params-verifier flow](/assets/img/params-verifier-flow.jpeg)
 
 - 主要包括两大块：
 
@@ -118,7 +118,7 @@ Github repo: https://github.com/Yann-Wang/params-verifier
 
 - 每种数据类型只进行指定的部分校验步骤，如下：
 
-  ![validation rule](http://okup5z621.bkt.clouddn.com/validation-rule.jpeg)
+  ![validation rule](/assets/img/validation-rule.jpeg)
 
 校验顺序由上到下执行。
 

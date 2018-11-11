@@ -122,10 +122,10 @@ fs.outputFile("./build/file.js", str2, function (err) {
 }
 </style>
 <ul class="emoji">
-<li><span>Apple:    </span> <img alt="face with tears of joy" src="http://okup5z621.bkt.clouddn.com/face_tears_apple.png"></li>
-<li><span>Google:   </span> <img alt="face with tears of joy" src="http://okup5z621.bkt.clouddn.com/face_tears_google.png"></li>
-<li><span>Facebook: </span> <img alt="face with tears of joy" src="http://okup5z621.bkt.clouddn.com/face_tears_fb.png"></li>
-<li><span>Microsoft:</span> <img alt="face with tears of joy" src="http://okup5z621.bkt.clouddn.com/face_tears_ms.png"></li>
+<li><span>Apple:    </span> <img alt="face with tears of joy" src="/assets/img/face_tears_apple.png"></li>
+<li><span>Google:   </span> <img alt="face with tears of joy" src="/assets/img/face_tears_google.png"></li>
+<li><span>Facebook: </span> <img alt="face with tears of joy" src="/assets/img/face_tears_fb.png"></li>
+<li><span>Microsoft:</span> <img alt="face with tears of joy" src="/assets/img/face_tears_ms.png"></li>
 </ul>
 
 其他公司的实现可以参见[这里](http://emojipedia.org/face-with-tears-of-joy/)
