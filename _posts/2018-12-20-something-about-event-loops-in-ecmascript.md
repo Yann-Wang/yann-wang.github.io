@@ -7,6 +7,8 @@ tags: [ecmascript, event loops]
 
 事情的起因是这样的，一直很好奇，async/await语句在runtime中是怎么执行的，于是便查阅了Ecmascript标准文档，下面我们由此展开。
 
+<!-- more -->
+
 #### async和await的执行过程
 
 ![AsyncFunctionStart](/assets/img/AsyncFunctionStart.png "AsyncFunctionStart")
