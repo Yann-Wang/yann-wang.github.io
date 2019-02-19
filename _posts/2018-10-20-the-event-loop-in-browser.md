@@ -523,17 +523,30 @@ demo中， 对dom进行了10次修改，而MutationObserver callback也被执行
 <div class="references">References</div>
 
 [1] [WHATWG, 'HTML Living Standard', 2018. [Online]. Available: https://html.spec.whatwg.org/multipage/webappapis.html#event-loops. [Accessed: 18- Dec- 2018]](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops)
+
 [2] [W3C, 'HTML Standard', 2011. [Online]. Available: https://www.w3.org/TR/2011/WD-html5-20110525/webappapis.html#event-loops. [Accessed: 18- Dec- 2018]](https://www.w3.org/TR/2011/WD-html5-20110525/webappapis.html#event-loops)
+
 [3] [WHATWG, 'DOM Living Standard', 2018. [Online]. Available: https://dom.spec.whatwg.org/#queue-a-mutation-observer-compound-microtask. [Accessed: 18- Dec- 2018]](https://dom.spec.whatwg.org/#queue-a-mutation-observer-compound-microtask)
+
 [4] [Wikipedia contributors, 'WHATWG', 2018. [Online]. Available: https://en.wikipedia.org/wiki/WHATWG. [Accessed: 18- Dec- 2018]](https://en.wikipedia.org/wiki/WHATWG)
+
 [5] [Maya Lekova, 'Faster async functions and promises', 2018. [Online]. Availabel: https://v8.dev/blog/fast-async. [Accessed: 18- Dec- 2018]](https://v8.dev/blog/fast-async)
+
 [6] [Philip Roberts, 'What the heck is the event loop anyway? - JSConf.EU 2014', 2014. [Online]. Available: https://www.youtube.com/watch?v=8aGhZQkoFbQ. [Accessed: 18- Dec- 2018]](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
 [7] [Jake Archibald, 'In The Loops - JSConf.Asia 2018', 2018. [Online]. Availabel: https://www.youtube.com/watch?v=cCOL7MC4Pl0. [Accessed: 18- Dec- 2018]](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
+
 [8] [Shelley Vohr, 'Asynchrony: Under the Hood - JSConf EU 2018', 2018, [Online]. Available: https://www.youtube.com/watch?v=SrNQS8J67zc. [Accessed: 18- Dec- 2018]](https://www.youtube.com/watch?v=SrNQS8J67zc)
+
 [9] [MDN contributors, 'Using Web Workers', 2018. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers. [Accessed: 18- Dec- 2018]](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+
 [10] [Matt Gaunt, 'service workers', 2018. [Online]. Available: https://developers.google.com/web/fundamentals/primers/service-workers/. [Accessed: 18- Dec- 2018]](https://developers.google.com/web/fundamentals/primers/service-workers/)
+
 [11] [Paul Lewis, 'Using requestIdleCallback', 2015. [Online]. Available: https://developers.google.com/web/updates/2015/08/using-requestidlecallback. [Accessed: 18- Dec- 2018]](https://developers.google.com/web/updates/2015/08/using-requestidlecallback)
+
 [12] [Alexander Farkas, 'requestIdleCallback', 2016. [Online]. Available: https://github.com/aFarkas/requestIdleCallback. [Accessed: 18- Dec- 2018]](https://github.com/aFarkas/requestIdleCallback)
+
 [13] [Yang JingZhuo, '从event loop规范探究javaScript异步及浏览器更新渲染时机', 2017. [Online]. Available: https://github.com/aooy/blog/issues/5. [Accessed: 18- Dec- 2018]](https://github.com/aooy/blog/issues/5)
+
 [14] [Jake Archibald, 'Tasks, microtasks, queues and schedules', 2015. [Online]. Available: https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/?utm_source=html5weekly. [Accessed: 08- Jan- 2019]](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/?utm_source=html5weekly)
 
