@@ -21,6 +21,8 @@ tags: [white screen, failure]
 - [解决过程时间轴](#解决过程时间轴)
 - [关键问题解决方案](#关键问题解决方案)
   - [Script error问题](#script-error问题)
+    - [script脚本跨域预加载prefetch/preload：Error事件读取报错信息](#script脚本跨域预加载prefetchpreloaderror事件读取报错信息)
+    - [crossorigin属性配置](#crossorigin属性配置)
   - [收集error事件的报错信息](#收集error事件的报错信息)
   - [vue框架的报错冒泡机制 && sentry sdk如何收集vue报错](#vue框架的报错冒泡机制--sentry-sdk如何收集vue报错)
   - [```ERR_CONTENT_LENGTH_MISMATCH```问题分析](#err_content_length_mismatch问题分析)
@@ -156,13 +158,102 @@ html文件增加监听error事件
 ```
 
 ##### Script error问题
-跨域script报错后，监听error事件拿到的信息会被拦截，打印出来的内容会变成```Script error.```，解决方案为：
+
+跨域script报错后，监听error事件拿到的信息会被拦截，打印出来的内容会变成```Script error.```
+
+![Script error](/assets/img/Script-error.png "Scirpt-error")
+
+解决方案为：
 1. 在script tag中增加```crossorigin=anonymous```
 2. 给script服务(```cc.aaa.com```)配置跨域头```Access-Control-Allow-Origin: https://current-site.com```
 
 具体可参考[1]
 
+配置后的效果：
+
+![without Script error](/assets/img/without-Script-error.png "without-Scirpt-error")
+
 关于script脚本跨域请求：Error事件读取报错信息，以及script脚本跨域预加载：Error事件读取报错信息，具体可以见demo [6]
+
+###### script脚本跨域预加载prefetch/preload：Error事件读取报错信息
+
+需要注意的是prefetch/preload link tag中也需要增加```crossorigin=anonymous```, 如果仅仅script tag中增加```crossorigin```标识，则prefetch/preload会失去预加载的作用，因为script会重新拉取该js脚本。
+
+// pfefetch.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>Document</title>
+	<script>
+        window.vconsoleLoaded = false;
+        window.addEventListener('error', function(e) {
+          console.error(e);
+          console.error('Erro type: ', e.type);
+          console.error('Error message: ', e.message);
+          console.error('Error filename: ', e.filename);
+          console.error('Error lineno: ', e.lineno);
+          console.error('Error colno: ', e.colno);
+        }, false);
+
+        var s = document.createElement('script');
+        s.onload = function () {
+          var vConsole = new VConsole();
+          console.log('cxssdfs')
+        };
+        s.onerror = function() {};
+        s.src = './js/vconsole.min.js';
+        s.async = false;
+        document.getElementsByTagName("head")[0].appendChild(s);
+    </script>
+    <link rel="preload" as="script" href="http://localhost:4000/prefetch_demo.js" crossorigin="anonymous">
+</head>
+<body>
+	<h1>crossorigin script</h1>
+	<h3 onclick="ttt()">点击获取静态资源并执行相关方法</h3>
+
+    <script>
+
+        function ttt() {
+          var s = document.createElement('script');
+          s.onload = function () {
+            window.dd();
+          };
+          s.crossOrigin = true;
+          s.onerror = function() {};
+          s.src = 'http://localhost:4000/prefetch_demo.js';
+          s.async = false;
+          document.body.appendChild(s);
+
+        }
+
+    </script>
+
+
+</body>
+</html>
+```
+
+```javascript
+window.dd = function test() {
+    tt();
+}
+```
+
+###### crossorigin属性配置
+
+如果使用vue-cli脚手架，则在vue.config.js中可以增加该属性配置，开启crossorigin后，vue-cli-service打包时会自动在script tag和link tag中配置crossorigin属性
+
+```javascript
+module.exports = {
+    crossorigin: 'anonymous',
+}
+```
+
+
 
 ##### 收集error事件的报错信息
 1. 方案一： 可通过动态加载vconsole展示error信息
