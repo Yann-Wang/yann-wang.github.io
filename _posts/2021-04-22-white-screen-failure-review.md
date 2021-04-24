@@ -108,13 +108,15 @@ tags: [white screen, failure]
 ```
 
 - App.vue文件
+
 ```vue
 <template>
     <!-- 顶通部分 -->
     <router-view /> <!-- 一级路由入口 对应Layout.vue -->
 </template>
 <script>
-// watch $route中 执行了checkVersion方法  // 该方法对应的逻辑：用户在使用过程中，前端应用发布了新版本，通过页面维度的实时检测，发现有新版本后，自动重刷页面的技术方案
+// watch $route中 执行了checkVersion方法
+// 该方法对应的逻辑：用户在使用过程中，前端应用发布了新版本，通过页面维度的实时检测，发现有新版本后，自动重刷页面的技术方案
 <script>
 ```
 
