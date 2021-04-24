@@ -109,7 +109,7 @@ tags: [white screen, failure]
 
 - App.vue文件
 
-```vue
+```html
 <template>
     <!-- 顶通部分 -->
     <router-view /> <!-- 一级路由入口 对应Layout.vue -->
