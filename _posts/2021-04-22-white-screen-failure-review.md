@@ -161,7 +161,9 @@ html文件增加监听error事件
 
 跨域script报错后，监听error事件拿到的信息会被拦截，打印出来的内容会变成```Script error.```
 
-![Script error](/assets/img/Script-error.png "Scirpt-error")
+<div style="display:flex;justify-content:center">
+  <img src="/assets/img/Script-error.png" alt="Scirpt-error" style="flex:none;width:320px;margin-bottom: 20px;">
+</div>
 
 解决方案为：
 1. 在script tag中增加```crossorigin=anonymous```
@@ -171,7 +173,9 @@ html文件增加监听error事件
 
 配置后的效果：
 
-![without Script error](/assets/img/without-Script-error.png "without-Scirpt-error")
+<div style="display:flex;justify-content:center">
+  <img src="/assets/img/without-Script-error.png" alt="without Script error" style="flex:none;width:320px;margin-bottom: 20px;">
+</div>
 
 关于script脚本跨域请求：Error事件读取报错信息，以及script脚本跨域预加载：Error事件读取报错信息，具体可以见demo [6]
 
