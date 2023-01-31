@@ -55,10 +55,12 @@ tags: [user experience, performance, optimize, lynx]
 
 
 ### 优化概览
-![Performance Summary @2x](/assets/img/performance_summary.jpg "PerformanceSummary")
+
+![Performance Summary](/assets/img/performance_summary.jpg "PerformanceSummary")
 
 
 ### Lynx页面生命周期
+
 ![Performance Summary @2x](/assets/img/lynx_page_lifecycle.jpg "LynxPageLifecycle")
 
 ### 数据采集
@@ -78,7 +80,9 @@ tags: [user experience, performance, optimize, lynx]
 
 #### 性能看板
 常用的看板可按如下分类。
-![Data Board @2x](/assets/img/data_board.jpeg "DataBoard")
+
+![Data Board](/assets/img/data_board.jpeg "DataBoard")
+
 #### 数据推送
 这里主要使用TEA平台数据看板上的订阅能力，在订阅能力中录入飞书群id，然后在指定飞书群增加“数据平台推送服务”机器人；这样即可实现每天指定时间给指定飞书群推送指定看板的数据报表。
 
@@ -97,10 +101,13 @@ tags: [user experience, performance, optimize, lynx]
 #### 首屏优化
 
 ##### 离线化
+
 ![Offline Resource @2x](/assets/img/offline_resource.jpeg "OfflineResource")
 
 优化资源加载时间： 让产物以离线包的方式加载 （字节内部的Lynx页面资源基本都是使用Gecko离线化能力）。
 >Gecko是字节内部的资源分发平台，支持以离线和在线的方式通过CDN向双端App分发资源产物。
+
+
 ##### 缓存渲染
 优化用户体感上的等待时长
 
@@ -124,6 +131,7 @@ tags: [user experience, performance, optimize, lynx]
 
 
 ##### 首屏非必要组件延后创建
+
 ![Not needed component in first screen @2x](/assets/img/not_needed_component_in_first_screen.jpg "NotNeededInFirstScreen")
 
 - Case 1
@@ -132,13 +140,17 @@ tags: [user experience, performance, optimize, lynx]
 
 - Case 2
 商城1.0版本中，首屏接口返回后，会创建20+个<x-tab-bar-item />组件，通过trace分析发现，耗时500ms，但除了首屏用到的5个tab，其他tab都是不可见的；所以在数据返回后，先创建5个tab，在页面ready之后再创建后面的15个tab，这样首屏tab渲染耗时下降到100ms。
+
+
 ##### 数据预取
+
 ![data prefetch @2x](/assets/img/data_prefetch.jpg "DataPrefetch")
 
 提前接口请求的时间点到路由跳转甚至更早，直播容器提供的Latch方案可以实现。
 
 
 ##### 包体积优化
+
 ![package size optimizing @2x](/assets/img/package_size_optimizing.jpg "packageSizeOptimizing")
 
 减少loadjs耗时，优化js线程准备时间。
@@ -152,6 +164,7 @@ Lynx项目的每个依赖都需要精打细算，引入第三方库要有性能�
 2. 无附加依赖，比如引入A就必须引入B，这就不合理。
 
 - Case 1
+
 ![qs reference @2x](/assets/img/qs_reference.jpg "QsReference")
 
 如qs某版本依赖了side-channel库，side-channel又依赖了其他库，导致loadjs阶段耗时很大。
@@ -166,6 +179,7 @@ Lynx项目的每个依赖都需要精打细算，引入第三方库要有性能�
    2. 历史遗留问题，如实验、活动已结束，但代码未移除
 
 - Case
+
 ![package size optimizing data @2x](/assets/img/package_size_optimizing_data.jpeg "packageSizeOptimizingData")
 
 商城1.0版本对包体积优化后，安卓中、低端机loadjs耗时减少300ms。
@@ -190,6 +204,7 @@ Lynx项目的每个依赖都需要精打细算，引入第三方库要有性能�
 2. 精准订阅： 只订阅依赖模块的数据更新
 
 - Case
+
 ![redux optimizing @2x](/assets/img/redux_optimizing.jpg "ReduxOptimizing")
 
 抖音超市项目进行redux优化后，渲染耗时降低70%
@@ -203,6 +218,7 @@ getABTest: 获取实验结果
 这些函数调用高频，有一定的计算量，但一次会话期间基本无变更，可考虑缓存计算结果。
 
 - Case
+
 ![cache calc result @2x](/assets/img/cache_calc_result.jpg "CacheCalcResult")
 
 上图为Trace中 同一函数100+次调用。
@@ -238,9 +254,13 @@ pageConfig: {
 在iOS上默认未开启该设备，这会带来两个问题：
 1. 在一次事件循环中不会合并更新，原因如下：
    1. setState更新实现逻辑：
+
    ![setState function @2x](/assets/img/setState_function.jpg)
+
    2. nextTick实现逻辑
+
    ![nextTick function @2x](/assets/img/nextTick_function.jpeg)
+
 2. 导致componentDidUpdate多次执行
 
 ##### 减少数据回设
@@ -249,6 +269,7 @@ pageConfig: {
 2. 依赖的组件内部变量、函数不是以lepus开头的，在render中使用的
 
 可以通过trace分析找到 UpdateComponentData 中的 __tempX的变更，这种命名的变量都是会引发数据回设的，如：
+
 ![data reset @2x](/assets/img/data_reset.jpeg)
 
 
