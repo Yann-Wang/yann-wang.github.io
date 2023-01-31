@@ -59,15 +59,20 @@ a {
 
 h3{
   font:normal 23px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h4{
-  font:normal 23px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom: 3px solid #e74c3c;
   margin: 50px 0 24px;
   background-color: #f8f8f8;
   line-height: 45px;
   padding-left: 5px;
+}
+
+h4{
+  font:normal 20px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 3px solid #3498db;
+  margin: 30px 0 10px;
+  line-height: 30px;
+  padding-left: 5px;
+  width: max-content;
 }
 
 h5{
