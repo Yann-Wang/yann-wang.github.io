@@ -97,7 +97,7 @@ tags: [user experience, performance, optimize, lynx]
 #### 首屏优化
 
 ##### 离线化
-![Offline Resource](/assets/img/offline_resource.jpg "OfflineResource")
+![Offline Resource @2x](/assets/img/offline_resource.jpeg "OfflineResource")
 
 优化资源加载时间： 让产物以离线包的方式加载 （字节内部的Lynx页面资源基本都是使用Gecko离线化能力）。
 >Gecko是字节内部的资源分发平台，支持以离线和在线的方式通过CDN向双端App分发资源产物。
@@ -223,7 +223,7 @@ Lynx的State变更后的diff逻辑和React不同，Lynx的状态更新diff逻辑
 1. 从state变更的组件开始，整个树从下做diff
 2. 遇到自定义Component后，判断自定义Component的props有无变化，如果props没变化，停止diff
 
-![dom diff](/assets/img/dom_diff.jpeg "DomDiff")
+![dom diff @2x](/assets/img/dom_diff.jpeg "DomDiff")
 
 root.state.a变更后，整个树会做diff，但是如果这个状态只是D组件使用的话，其实其他组件完全没必要做diff的，所以可以将D依赖的props从外部root更改为D内部自己维护（比如在D内部用redux监听相关的数据变更，然后更新自己的state）。
 

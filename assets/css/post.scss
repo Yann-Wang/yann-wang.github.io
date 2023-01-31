@@ -47,6 +47,10 @@
   }
 }
 
+.post-content img[alt~="@2x"] {
+  zoom: 50%;
+}
+
 
 a {
   color:#4d85d1;
