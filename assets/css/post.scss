@@ -24,7 +24,15 @@
     border: none;
     padding:0;
   }
+  @media screen and (min-width:769px){
+    width: calc(100% - 350px);
+    margin: 0;
+    margin-left: 350px;
+  }
 }
+
+
+
 
 .wrapper{
   margin:0 10px;
@@ -46,6 +54,20 @@
     padding-left:20px;
   }
 }
+
+/* PC上展示时，目录在左侧展示 */
+@media screen and (min-width:769px){
+  .post-content .category+ul {
+    position: fixed;
+    top: 120px;
+    left: 10px;
+    bottom: 50px;
+    max-width: 300px;
+    width: max-content;
+    overflow-y: scroll;
+  }
+}
+
 
 .post-content img[alt~="@2x"] {
   zoom: 50%;
@@ -109,6 +131,7 @@ p,ul,li{
     }
   }
 }
+
 
 .references{
   margin-top: 60px;

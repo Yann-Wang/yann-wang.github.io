@@ -10,7 +10,7 @@ tags: [user experience, performance, optimize, lynx]
 本文主要总结下自己在做Lynx页面性能优化中的一些经验。
 <!-- more -->
 
-目录
+<p class="category">目录</p>
 
 - [背景](#背景)
 - [优化概览](#优化概览)

@@ -9,7 +9,7 @@ tags: [ecmascript, javascript object, subtype]
 
 <!-- more -->
 
-目录
+<p class="category">目录</p>
 
 - [判断Javascript object子类型的方法](#判断javascript-object子类型的方法)
 - [Object.prototype.toString实现原理](#objectprototypetostring实现原理)
