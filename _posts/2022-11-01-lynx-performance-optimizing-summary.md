@@ -56,12 +56,12 @@ tags: [user experience, performance, optimize, lynx]
 
 ### 优化概览
 
-![Performance Summary](/assets/img/performance_summary.jpg "PerformanceSummary")
+![Performance Summary](https://cdn.phoenician.cn/lynx_performance_summary/performance_summary-min.jpg "PerformanceSummary")
 
 
 ### Lynx页面生命周期
 
-![Performance Summary @2x](/assets/img/lynx_page_lifecycle.jpg "LynxPageLifecycle")
+![Lynx Page Lifecycle @2x](https://cdn.phoenician.cn/lynx_performance_summary/lynx_page_lifecycle-min.jpg "LynxPageLifecycle")
 
 ### 数据采集
 
@@ -72,7 +72,7 @@ tags: [user experience, performance, optimize, lynx]
 >3. 其他为直播容器埋点
 >4. TEA为字节内部的数据行为分析系统，TEA虚拟属性由几个真实属性计算而来
 
-![Data Collect Index @2x](/assets/img/data_collect_index.jpg "DataCollectIndex")
+![Data Collect Index @2x](https://cdn.phoenician.cn/lynx_performance_summary/data_collect_index-min.jpg "DataCollectIndex")
 
 #### 埋点SDK
 >技术方案设计：待补
@@ -81,7 +81,7 @@ tags: [user experience, performance, optimize, lynx]
 #### 性能看板
 常用的看板可按如下分类。
 
-![Data Board](/assets/img/data_board.jpeg "DataBoard")
+![Data Board](https://cdn.phoenician.cn/lynx_performance_summary/data_board-min.jpeg "DataBoard")
 
 #### 数据推送
 这里主要使用TEA平台数据看板上的订阅能力，在订阅能力中录入飞书群id，然后在指定飞书群增加“数据平台推送服务”机器人；这样即可实现每天指定时间给指定飞书群推送指定看板的数据报表。
@@ -102,7 +102,7 @@ tags: [user experience, performance, optimize, lynx]
 
 ##### 离线化
 
-![Offline Resource @2x](/assets/img/offline_resource.jpeg "OfflineResource")
+![Offline Resource @2x](https://cdn.phoenician.cn/lynx_performance_summary/offline_resource-min.jpeg "OfflineResource")
 
 优化资源加载时间： 让产物以离线包的方式加载 （字节内部的Lynx页面资源基本都是使用Gecko离线化能力）。
 >Gecko是字节内部的资源分发平台，支持以离线和在线的方式通过CDN向双端App分发资源产物。
@@ -111,13 +111,13 @@ tags: [user experience, performance, optimize, lynx]
 ##### 缓存渲染
 优化用户体感上的等待时长
 
-![Cache Output @2x](/assets/img/cache_output.jpg "CacheOutput")
+![Cache Output @2x](https://cdn.phoenician.cn/lynx_performance_summary/cache_output-min.jpg "CacheOutput")
 
 
 ###### 首屏直出
 基于Lynx的首屏直出能力，在页面创建时直接渲染缓存数据。
 
-![FirstScreen Output @2x](/assets/img/first_screen_output.jpg "FirstScreenOutput")
+![FirstScreen Output @2x](https://cdn.phoenician.cn/lynx_performance_summary/first_screen_output-min.jpg "FirstScreenOutput")
 
 上图是首屏直出逻辑流程图，在页面打开是，会同时执行三个逻辑：
 1. 读取缓存配置文件并根据配置文件将本地缓存数据（storage_data）注入lynx.globalProps中
@@ -132,7 +132,7 @@ tags: [user experience, performance, optimize, lynx]
 
 ##### 首屏非必要组件延后创建
 
-![Not needed component in first screen @2x](/assets/img/not_needed_component_in_first_screen.jpg "NotNeededInFirstScreen")
+![Not needed component in first screen @2x](https://cdn.phoenician.cn/lynx_performance_summary/not_needed_component_in_first_screen-min.jpg "NotNeededInFirstScreen")
 
 - Case 1
 比如弹窗可能要等到接口返回或用户行为之后才会展示，这种组件就可以延后创建
@@ -144,14 +144,14 @@ tags: [user experience, performance, optimize, lynx]
 
 ##### 数据预取
 
-![data prefetch @2x](/assets/img/data_prefetch.jpg "DataPrefetch")
+![data prefetch @2x](https://cdn.phoenician.cn/lynx_performance_summary/data_prefetch-min.jpg "DataPrefetch")
 
 提前接口请求的时间点到路由跳转甚至更早，直播容器提供的Latch方案可以实现。
 
 
 ##### 包体积优化
 
-![package size optimizing @2x](/assets/img/package_size_optimizing.jpg "packageSizeOptimizing")
+![package size optimizing @2x](https://cdn.phoenician.cn/lynx_performance_summary/package_size_optimizing_data-min.jpeg "packageSizeOptimizing")
 
 减少loadjs耗时，优化js线程准备时间。
 
@@ -165,7 +165,7 @@ Lynx项目的每个依赖都需要精打细算，引入第三方库要有性能�
 
 - Case 1
 
-![qs reference @2x](/assets/img/qs_reference.jpg "QsReference")
+![qs reference @2x](https://cdn.phoenician.cn/lynx_performance_summary/qs_reference-min.jpg "QsReference")
 
 如qs某版本依赖了side-channel库，side-channel又依赖了其他库，导致loadjs阶段耗时很大。
 
@@ -180,7 +180,7 @@ Lynx项目的每个依赖都需要精打细算，引入第三方库要有性能�
 
 - Case
 
-![package size optimizing data @2x](/assets/img/package_size_optimizing_data.jpeg "packageSizeOptimizingData")
+![package size optimizing data @2x](https://cdn.phoenician.cn/lynx_performance_summary/package_size_optimizing_data-min.jpeg "packageSizeOptimizingData")
 
 商城1.0版本对包体积优化后，安卓中、低端机loadjs耗时减少300ms。
 
@@ -205,7 +205,7 @@ Lynx项目的每个依赖都需要精打细算，引入第三方库要有性能�
 
 - Case
 
-![redux optimizing @2x](/assets/img/redux_optimizing.jpg "ReduxOptimizing")
+![redux optimizing @2x](https://cdn.phoenician.cn/lynx_performance_summary/redux_optimizing-min.jpg "ReduxOptimizing")
 
 抖音超市项目进行redux优化后，渲染耗时降低70%
 
@@ -219,7 +219,7 @@ getABTest: 获取实验结果
 
 - Case
 
-![cache calc result @2x](/assets/img/cache_calc_result.jpg "CacheCalcResult")
+![cache calc result @2x](https://cdn.phoenician.cn/lynx_performance_summary/cache_calc_result-min.jpg "CacheCalcResult")
 
 上图为Trace中 同一函数100+次调用。
 
@@ -239,7 +239,7 @@ Lynx的State变更后的diff逻辑和React不同，Lynx的状态更新diff逻辑
 1. 从state变更的组件开始，整个树从下做diff
 2. 遇到自定义Component后，判断自定义Component的props有无变化，如果props没变化，停止diff
 
-![dom diff @2x](/assets/img/dom_diff.jpeg "DomDiff")
+![dom diff @2x](https://cdn.phoenician.cn/lynx_performance_summary/dom_diff-min.jpeg "DomDiff")
 
 root.state.a变更后，整个树会做diff，但是如果这个状态只是D组件使用的话，其实其他组件完全没必要做diff的，所以可以将D依赖的props从外部root更改为D内部自己维护（比如在D内部用redux监听相关的数据变更，然后更新自己的state）。
 
@@ -255,11 +255,11 @@ pageConfig: {
 1. 在一次事件循环中不会合并更新，原因如下：
    1. setState更新实现逻辑：
 
-   ![setState function @2x](/assets/img/setState_function.jpg)
+   ![setState function @2x](https://cdn.phoenician.cn/lynx_performance_summary/setState_function-min.jpg)
 
    2. nextTick实现逻辑
 
-   ![nextTick function @2x](/assets/img/nextTick_function.jpeg)
+   ![nextTick function @2x](https://cdn.phoenician.cn/lynx_performance_summary/nextTick_function-min.jpeg)
 
 2. 导致componentDidUpdate多次执行
 
@@ -270,7 +270,7 @@ pageConfig: {
 
 可以通过trace分析找到 UpdateComponentData 中的 __tempX的变更，这种命名的变量都是会引发数据回设的，如：
 
-![data reset @2x](/assets/img/data_reset.jpeg)
+![data reset @2x](https://cdn.phoenician.cn/lynx_performance_summary/data_reset-min.jpeg)
 
 
 ##### 长列表数据预加载
