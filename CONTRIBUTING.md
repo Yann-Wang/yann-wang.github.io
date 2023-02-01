@@ -21,6 +21,7 @@
 
 1. [图片要压缩](https://compressjpeg.com/zh/) 最好控制在50kb以内，超过100kb的图片要尽量少，不建议图片超过300kb
 2. [图片要上传CDN](https://portal.qiniu.com/kodo/bucket/resource-v2?bucketName=download)
+3. 图片要增加二倍图标识 @2x
 
 
 ##### 插入列表

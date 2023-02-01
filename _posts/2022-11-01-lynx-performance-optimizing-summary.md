@@ -56,7 +56,7 @@ tags: [user experience, performance, optimize, lynx]
 
 ### 优化概览
 
-![Performance Summary](https://cdn.phoenician.cn/lynx_performance_summary/performance_summary-min.jpg "PerformanceSummary")
+![Performance Summary @2x](https://cdn.phoenician.cn/lynx_performance_summary/lynx_performance_summary2-min.jpg "PerformanceSummary")
 
 
 ### Lynx页面生命周期
@@ -81,7 +81,7 @@ tags: [user experience, performance, optimize, lynx]
 #### 性能看板
 常用的看板可按如下分类。
 
-![Data Board](https://cdn.phoenician.cn/lynx_performance_summary/data_board-min.jpeg "DataBoard")
+![Data Board @2x](https://cdn.phoenician.cn/lynx_performance_summary/data_board2-min.jpg "DataBoard")
 
 #### 数据推送
 这里主要使用TEA平台数据看板上的订阅能力，在订阅能力中录入飞书群id，然后在指定飞书群增加“数据平台推送服务”机器人；这样即可实现每天指定时间给指定飞书群推送指定看板的数据报表。

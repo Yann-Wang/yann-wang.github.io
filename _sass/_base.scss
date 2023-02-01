@@ -11,13 +11,13 @@ a{
 
 
 h1,h2,h3,h4,h5,h6{
-  color: #606060;
+  color: #1f2329;
   font-weight: normal;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p,ul,li{
-  color: #606060;
+  color: #1f2329;
 }
 
 ul,li{
@@ -26,10 +26,14 @@ ul,li{
 }
 
 blockquote{
-  margin: 16px 40px 16px 28px;
-  padding-left:12px;
+  margin: 16px 40px 16px 0px;
+  padding-left:5px;
   border-left: 2px solid #646a73;
   line-height: 26px;
+
+  h1,h2,h3,h4,h5,h6,p,ul,li {
+    color: #646a73;
+  }
 }
 
 img{
