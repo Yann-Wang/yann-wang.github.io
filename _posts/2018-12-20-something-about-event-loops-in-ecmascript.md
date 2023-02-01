@@ -9,7 +9,7 @@ tags: [ecmascript, event loops]
 
 <!-- more -->
 
-#### async和await的执行过程
+#### async和await的执行过程
 
 ![AsyncFunctionStart](/assets/img/AsyncFunctionStart.png "AsyncFunctionStart")
 

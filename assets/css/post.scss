@@ -24,10 +24,12 @@
     border: none;
     padding:0;
   }
+  /* PC上展示时，目录在左侧展示 */
   @media screen and (min-width:769px){
     width: calc(100% - 350px);
     margin: 0;
     margin-left: 350px;
+    box-sizing: border-box;
   }
 }
 
