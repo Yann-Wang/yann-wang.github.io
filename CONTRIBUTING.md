@@ -3,6 +3,8 @@
 
 ##### 画表格
 
+参考 [github pages 官方的markdown语法教程](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#tables)
+
 示例如下：
 
 |引用格式  |   字符 |  Unicode编码 |
@@ -49,4 +51,17 @@
 
 ##### 插入目录
 
-正文目录更新后，顶部目录会自动更新
+- 使用
+
+  1. 增加目录标识（该标识可以支持目录展示在左侧（PC上打开时））
+
+  ```html
+      <p class="category">目录</p>
+  ```
+
+  2. 插入TOC：详情点击[这里](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/toc)
+
+
+- 目录自动生成原理：借助了VS Code插件： Markdown Preview Enhanced
+
+

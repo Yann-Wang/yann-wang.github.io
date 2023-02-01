@@ -9,11 +9,11 @@ tags: [white screen, failure]
 
 <!-- more -->
 
-目录
+<p class="category">目录</p>
 
 - [背景](#背景)
 - [问题描述](#问题描述)
-- [环境 && 技术栈描述](#环境--技术栈描述)
+- [环境 \&\& 技术栈描述](#环境--技术栈描述)
   - [h5系统技术架构](#h5系统技术架构)
   - [h5系统的部署架构](#h5系统的部署架构)
   - [vue-cli-service打包后的index.html文件](#vue-cli-service打包后的indexhtml文件)
@@ -24,7 +24,7 @@ tags: [white screen, failure]
     - [script脚本跨域预加载prefetch/preload：Error事件读取报错信息](#script脚本跨域预加载prefetchpreloaderror事件读取报错信息)
     - [crossorigin属性配置](#crossorigin属性配置)
   - [收集error事件的报错信息](#收集error事件的报错信息)
-  - [vue框架的报错冒泡机制 && sentry sdk如何收集vue报错](#vue框架的报错冒泡机制--sentry-sdk如何收集vue报错)
+  - [vue框架的报错冒泡机制 \&\& sentry sdk如何收集vue报错](#vue框架的报错冒泡机制--sentry-sdk如何收集vue报错)
   - [```ERR_CONTENT_LENGTH_MISMATCH```问题分析](#err_content_length_mismatch问题分析)
 - [总结](#总结)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: node参数校验类params-verifier的设计与使用
-date: 2018-02-03 
+date: 2018-02-03
 tags: [params, validation, params-verifier, node]
 ---
 
 今天来聊下我在实际业务场景中抽出的一个node包--params-verifier，用于后端controller层的参数校验。
 
-先来上个文档： http://npm.qima-inc.com/package/params-verifier
+先来上个文档： https://www.npmjs.com/package/params-verifier
 
 Github repo: https://github.com/Yann-Wang/params-verifier
 
