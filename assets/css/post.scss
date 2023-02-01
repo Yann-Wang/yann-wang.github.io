@@ -24,8 +24,8 @@
     border: none;
     padding:0;
   }
-  /* PC上展示时，目录在左侧展示 */
-  @media screen and (min-width:769px){
+  /* PC上展示时，页面宽度大于1150px时，目录在左侧展示 */
+  @media screen and (min-width:1150px){
     width: calc(100% - 350px);
     margin: 0;
     margin-left: 350px;
@@ -57,8 +57,8 @@
   }
 }
 
-/* PC上展示时，目录在左侧展示 */
-@media screen and (min-width:769px){
+/* PC上展示时，页面宽度大于1150px时，目录在左侧展示 */
+@media screen and (min-width:1150px){
   .post-content .category+ul {
     position: fixed;
     top: 120px;
@@ -67,6 +67,10 @@
     max-width: 300px;
     width: max-content;
     overflow-y: scroll;
+  }
+
+  .post-content .category+ul::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
   }
 }
 
