@@ -125,6 +125,8 @@ p,ul,li{
   border-collapse: collapse;
   th{
     border-bottom: 2px solid #ddd;
+    padding: 7px 20px;
+    line-height: 1.4;
   }
   td{
     border-top: 1px solid #ddd;
@@ -132,9 +134,18 @@ p,ul,li{
     line-height: 1.4;
   }
   @media screen and(max-width:768px){
+    th {
+      padding: 7px 10px;
+    }
     td{
       padding: 7px 10px;
     }
+  }
+
+  /* 表格第一列不换行 */
+  tr th:nth-of-type(1), tr td:nth-of-type(1) {
+    width: max-content;
+    white-space: nowrap;
   }
 }
 

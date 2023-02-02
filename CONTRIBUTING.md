@@ -14,6 +14,9 @@
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+{: .table}
+
+>{: .table} 必须要有，否则页面中无法展示条线
 
 markdown table 生成工具： [Tables Generator](https://www.tablesgenerator.com/markdown_tables)
 
