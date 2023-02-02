@@ -45,7 +45,7 @@ tags: [babel, compile, compilation, technique of compiling]
 | 转译器     | 转译器是一个程序，他将一种高级语言（源代码）转换成另一种高级语言。大多数情况下，将源代码一次性翻译完成。        | 比如babel(代码转化), tsc(代码转化), postcss(代码转化), teser(压缩), eslint(静态检查), stylelint(静态检查)                                                                                                                                                                                                                                                   |
 | 解释器     | 解释器是一个程序，它将高级语言（源代码）转换成机器代码，然后立即运行/执行该代码。它一次只翻译源代码中的一部分。 | 比如[V8中的Ignition解释器](https://zhuanlan.zhihu.com/p/601871778#h_601871778_7)（解释执行字节码）、[JSCore中的LLInt解释器](https://webkit.org/blog/9329/a-new-bytecode-format-for-javascriptcore/)（解释执行字节码）、[hermes中的解释器](https://www.infoq.cn/article/8JEVNZvTrj_e1oJwo5vL?utm_source=related_read&utm_medium=article)（解释执行字节码）等 |
 | 编译器     | 编译器是一个程序，它将高级语言（源代码）转换成机器代码 。大多数情况下，将源代码一次性翻译成机器代码。           | 比如[V8中的JIT编译器TurboFan](https://zhuanlan.zhihu.com/p/601871778#h_601871778_7)（编译字节码到机器码）、[JSCore中的JIT编译器(Baseline JIT, DFG JIT, FTL JIT)](https://juejin.cn/post/6890187786045882375)（编译字节码到机器码）                                                                                                                          |
-
+{: .table}
 
 >解释器和编译器都有自己擅长的场景，在JavaScript和Java这两种语言的虚拟机中，都同时用到了解释器和编译器（JIT）。
 

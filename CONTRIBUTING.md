@@ -15,6 +15,7 @@
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
+markdown table 生成工具： [Tables Generator](https://www.tablesgenerator.com/markdown_tables)
 
 ##### 插入图片
 
@@ -69,7 +70,7 @@
 
 - [VSCode 原生支持的Markdown能力](https://code.visualstudio.com/docs/languages/markdown)
 - [Markdown All in One插件支持的Markdown能力](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-- [GitHub Pages支持的Markdown能力](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
+- [GitHub Pages支持的Markdown能力](https://www.markdownguide.org/tools/github-pages/)
 
 
 #### 待解决问题
