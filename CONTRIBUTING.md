@@ -5,16 +5,15 @@
 
 参考 [github pages 官方的markdown语法教程](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#tables)
 
+格式化快捷键： alt+shift+f
+
 示例如下：
 
-|引用格式  |   字符 |  Unicode编码 |
-|:-------:|:-----:|:-----------:|
-| &amp;quot;  |  "    | U+0022 (34) |
-| &amp;amp;   |  &    | U+0026 (38) |
-| &amp;apos;  |  '    | U+0027 (39) |
-| &amp;lt;    |  <    | U+003C (60) |
-| &amp;gt;    |  >    | U+003E (62) |
-{: .table}
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 ##### 插入图片
@@ -59,12 +58,18 @@
       <p class="category">目录</p>
   ```
 
-  2. 插入TOC：详情点击[这里](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/toc)
+  2. 插入目录： 快捷键cmd+shift+p，选择```Create Table of Contents```命令，插入目录
 
 
-- 目录自动生成原理：借助了VS Code插件： Markdown Preview Enhanced
+- 目录自动生成原理：借助了VS Code插件： [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#github-flavored-markdown)
 
 
+
+##### 其他功能
+
+- [VSCode 原生支持的Markdown能力](https://code.visualstudio.com/docs/languages/markdown)
+- [Markdown All in One插件支持的Markdown能力](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [GitHub Pages支持的Markdown能力](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
 
 #### 待解决问题
