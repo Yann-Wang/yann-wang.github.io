@@ -282,7 +282,7 @@ transform阶段有一个深度优先遍历AST节点的过程，具体逻辑如�
 
 visitor函数的两个参数的数据结构如下：
 
-![transform visitor](https://cdn.phoenician.cn/technique-of-compiling-in-babel/transform-visitor-min.jpg)
+![transform visitor @2x](https://cdn.phoenician.cn/technique-of-compiling-in-babel/transform-visitor-min.jpg)
 
 
 
