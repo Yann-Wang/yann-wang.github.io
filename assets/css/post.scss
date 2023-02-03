@@ -59,6 +59,9 @@
 
 /* PC上展示时，页面宽度大于1150px时，目录在左侧展示 */
 @media screen and (min-width:1150px){
+  .post-content .category {
+    display: none;
+  }
   .post-content .category+ul {
     position: fixed;
     top: 120px;
