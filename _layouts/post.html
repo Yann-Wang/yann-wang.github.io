@@ -23,14 +23,9 @@
                     </p>
                 </header>
 
-                {% raw %}
-                {% assign content = content | replace: "<img src", "<img class='lazyload' src='/assets/img/double-color-loading-min.gif' data-src" %}
-                    <div class="post-content" itemprop="articleBody">
-                        {{ content }}
-                    </div>
-                {% endraw %}
-
-
+                <div class="post-content" itemprop="articleBody">
+                    {{ content }}
+                </div>
             </article>
             <br/>
             <br/>
@@ -42,7 +37,6 @@
     <!--{% include footer.html %}-->
 </div>
 
-<script src="/assets/js/lazysizes.5.3.2.min.js"></script>
 <!--{% if site.analytics %}-->
 <!--{% include analytics.html %}-->
 <!--{% endif %}-->
