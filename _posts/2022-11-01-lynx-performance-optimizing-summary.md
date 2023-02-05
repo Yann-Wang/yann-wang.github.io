@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lynx性能优化总结
+title: Lynx性能优化体系总结
 date: 2022-11-01
 tags: [user experience, performance, optimize, lynx]
 ---
