@@ -16,7 +16,7 @@ version: 1.0
 
 exclude: ['README.md', '.*', 'Gemfile']
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-feed
